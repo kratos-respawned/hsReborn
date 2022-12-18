@@ -1,7 +1,8 @@
 function Members() {
   return (
     <section className="">
-      <section className="border-t border-t-white grid grid-cols-3 mx-5 mt-10  py-16 md:py-28 relative overflow-y-hidden z-10">
+      <hr className="w-[90%] mx-auto" />
+      <section className=" grid grid-cols-3  mt-10  py-16 md:py-28 relative overflow-y-hidden z-10">
         <div className="grid place-items-center gap-y-2">
           <p className="text-hsPink font-clashDisplay text-3xl sm:text-5xl lg:text-7xl">
             5000 +
