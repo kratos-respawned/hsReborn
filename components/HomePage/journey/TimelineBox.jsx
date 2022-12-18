@@ -33,7 +33,7 @@ export default function TimelineBox(props) {
         style={gradientStyle}
       >
         <div className="w-full h-full">
-          <div className="absolute top-0 -right-3 transition-transform group-hover:-translate-x-3 ease-out hidden md:block">
+          <div className="absolute top-0 -right-3 transition-transform group-hover:-translate-x-3 ease-out block">
             <svg
               width="212"
               height="12"
@@ -68,51 +68,17 @@ export default function TimelineBox(props) {
               />
             </svg>
           </div>
-          <div className="absolute top-0 right-0 md:hidden">
-            <svg
-              width="149"
-              height="9"
-              viewBox="0 0 149 9"
-              fill="none"
-              xmlns="http://www.w3.org/2000/svg"
-            >
-              <path
-                d="M4.21015 0H29.2711L25.4352 8.11009H0.885742L4.21015 0Z"
-                fill="#267B8D"
-                fillOpacity="0.55"
-              />
-              <path
-                d="M34.3819 0H57.6527L54.0909 8.11009H31.2949L34.3819 0Z"
-                fill="#267B8D"
-                fillOpacity="0.79"
-              />
-              <path
-                d="M63.0109 0H88.0718L84.236 8.11009H59.6865L63.0109 0Z"
-                fill="#267B8D"
-                fillOpacity="0.85"
-              />
-              <path
-                d="M93.4201 0H118.481L114.645 8.11009H90.0957L93.4201 0Z"
-                fill="#267B8D"
-                fillOpacity="0.85"
-              />
-              <path
-                d="M123.838 0H148.899L145.063 8.11009H120.514L123.838 0Z"
-                fill="#267B8D"
-                fillOpacity="0.85"
-              />
-            </svg>
-          </div>
+
           <div className="flex flex-col gap-x-2 sm:flex-row justify-between w-full">
-            <p className="font-clashDisplay tracking-widest font-semibold text-lg uppercase text-[#267B8D] md:text-white relative w-full mt-5">
+            <p className="font-clashDisplay tracking-widest font-semibold text-lg uppercase  text-white relative w-full mt-5">
               {props.title}
             </p>
-            <span className="font-clashDisplay font-semibold text-lg uppercase text-[#267B8D] md:text-[#A686FF] absolute right-1">
+            <span className="font-clashDisplay font-semibold text-lg uppercase text-[#A686FF] absolute right-1">
               {props.year}
             </span>
           </div>
 
-          <p className="text-sm text-[#bbb] h-full leading-6 mt-7 font-extralight font-generalSans tracking-wider">
+          <p className="text-sm text-[#bbb] h-full leading-6 mt-7 font-extralight font-generalSans tracking-wider ">
             {props.desc}
           </p>
           <div className="absolute bottom-0 right-0">

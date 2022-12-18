@@ -1,9 +1,10 @@
-"use client";
 import Head from "next/head";
-import AboutUs from "../components/aboutUs/AboutUs";
-import HeroSection from "../components/heroSection/HeroSection";
-import Journey from "../components/journey/Journey";
-import Members from "../components/members/Members";
+import AboutUs from "../components/HomePage/aboutUs/AboutUs";
+import HeroSection from "../components/HomePage/heroSection/HeroSection";
+import Initiatives from "../components/HomePage/initiatives/Initiatives";
+import Journey from "../components/HomePage/journey/Journey";
+import Members from "../components/HomePage/members/Members";
+import Partners from "../components/HomePage/partners/Partners";
 
 function Home() {
   return (
@@ -15,6 +16,8 @@ function Home() {
       <Members />
       <AboutUs />
       <Journey />
+      <Partners />
+      <Initiatives />
     </>
   );
 }

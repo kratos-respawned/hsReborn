@@ -29,15 +29,15 @@ export default function Journey() {
   }, [isInView]);
 
   return (
-    <main className="mt-72 pb-16">
+    <main className="mt-0 md:mt-64 pb-16 relative">
       <div className="flex flex-col justify-center items-center gap-y-7  my-10 mb-16 relative">
         <h2
           ref={heading}
-          className="z-30 align-middle text-center block font-clashDisplay md:leading-[70px] font-medium md:font-semibold text-white md:text-[54px] text-4xl "
+          className="z-30 align-middle text-center block font-clashDisplay md:leading-[70px] font-medium md:font-semibold text-white text-4xl sm:text-6xl  "
         >
           Our
           <span
-            className={`cursor-pointer ml-2 hoverEffect ${
+            className={`cursor-pointer ml-5 hoverEffect ${
               isInView ? "start" : " "
             }`}
           >
@@ -47,7 +47,7 @@ export default function Journey() {
         <h3 className="text-lg py-4 font-clashDisplay italic text-white leading-[0px]  w-full text-center font-light pt-2">
           How it all started
         </h3>
-        <div className="bg-hsPink w-52 h-52 bg-blend-luminosity blur-[100px] absolute left-3/4" />
+        <div className="bg-hsPink w-32 h-32 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px] absolute -top-16 sm:top-0 left-3/4" />
       </div>
 
       <section
@@ -82,6 +82,7 @@ export default function Journey() {
           );
         })}
       </section>
+      <div className="bg-[#C81D5B] w-36 h-36 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px]  absolute  -bottom-12 sm:-bottom-6 left-0" />
     </main>
   );
 }
