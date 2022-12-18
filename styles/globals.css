@@ -7,10 +7,42 @@
 }
 @font-face {
     font-family: 'ClashDisplay-Medium';
-    src: url('../fonts/ClashDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/ClashDisplay-Medium.woff') format('woff'),
-        url('../fonts/ClashDisplay-Medium.ttf') format('truetype');
+    src: url('../fonts/ClashDisplay/ClashDisplay-Medium.woff2') format('woff2'),
+        url('../fonts/ClashDisplay/ClashDisplay-Medium.woff') format('woff'),
+        url('../fonts/ClashDisplay/ClashDisplay-Medium.ttf') format('truetype');
     font-weight: 500;
     font-display: swap;
     font-style: normal;
+}
+@font-face {
+    font-family: 'GeneralSans-Medium';
+    src: url('../fonts/generalSans/GeneralSans-Light.woff2') format('woff2'),
+        url('../fonts/generalSans/GeneralSans-Light.woff') format('woff'),
+        url('../fonts/generalSans/GeneralSans-Light.ttf') format('truetype');
+    font-weight: 200;
+    font-display: swap;
+    font-style: normal;
+}
+
+
+/* ===== Scrollbar CSS ===== */
+/* Firefox */
+* {
+    scrollbar-width: auto;
+    scrollbar-color: #eeeeee #140f1b;
+}
+
+/* Chrome, Edge, and Safari */
+*::-webkit-scrollbar {
+    width: 4px;
+}
+
+*::-webkit-scrollbar-track {
+    background: #140f1b;
+}
+
+*::-webkit-scrollbar-thumb {
+    background-color: #eeeeee;
+    border-radius: 0px;
+    border: 9px solid #ffffff;
 }

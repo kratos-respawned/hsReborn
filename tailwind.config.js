@@ -14,7 +14,8 @@ module.exports = {
         hsWhite:'#EEEEEE'
       },
       fontFamily: {
-        clashDisplay: ["ClashDisplay-Medium"]
+        clashDisplay: ["ClashDisplay-Medium"],
+        generalSans: ["GeneralSans-Medium"],
   },
     },
     plugins: [],

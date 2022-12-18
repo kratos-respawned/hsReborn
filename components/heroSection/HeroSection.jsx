@@ -2,7 +2,7 @@ import Image from "next/image";
 import hs from "../heroSection/hs.svg";
 function HeroSection() {
   return (
-    <main className="flex items-center justify-between  mt-10 pb-24">
+    <main className="flex items-center justify-between  mt-10 pb-24 px-5">
       <section className="max-w-[575px] space-y-3  ">
         <h2 className="font-clashDisplay font-medium text-white text-7xl">
           Fastest growing student society in North India
@@ -26,6 +26,7 @@ function HeroSection() {
           className="mx-auto "
           width={387}
           height={417}
+          priority
         />
         <div className="bg-hsBlue w-[492px] h-[492px] blur-3xl rounded-full absolute -top-2 translate-x-32 -z-10">
           <div className="bg-hsPink w-[192px] h-[192px] blur-xl rounded-full absolute top-10 translate-x-48" />

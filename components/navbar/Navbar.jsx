@@ -6,9 +6,11 @@ import Link from "next/link";
 function Navbar() {
   return (
     <header>
-      <nav className="flex items-center justify-between py-7">
+      <nav className="flex items-center justify-between py-7 px-5">
         <div className="flex space-x-4 items-center ">
-          <Image src={hsLogo} width={51} height={53} alt="hs logo" />
+          <Link href="/">
+            <Image src={hsLogo} width={51} height={53} alt="hs logo" />
+          </Link>
           <Image src={cu} width={95} height={34} alt="cu logo" />
           <Image src={qs} width={93} height={30} alt="qs logo" />
         </div>
