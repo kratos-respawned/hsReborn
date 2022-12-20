@@ -8,7 +8,7 @@ import {
   useSpring,
   useTransform,
 } from "framer-motion";
-
+// @ts-ignore
 function useParallax(value, distance) {
   return useTransform(value, [0, 1], [0, distance]);
 }
@@ -18,7 +18,8 @@ export default function Journey() {
   const ref = useRef(null);
   const [height, setHeight] = React.useState(100);
   const { scrollYProgress } = useScroll({ target: ref });
-  const y = useSpring(useParallax(scrollYProgress, height), {
+ // @ts-ignore
+ const y = useSpring(useParallax(scrollYProgress, height), {
     type: "spring",
     stiffness: 100,
     damping: 30,
