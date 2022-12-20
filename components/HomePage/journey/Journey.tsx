@@ -30,6 +30,7 @@ type: "spring",
 
   useEffect(() => {
     if (isInView) {
+// @ts-ignore
       heading.current.classList.add("start");
     }
     setHeight(ref.current.clientHeight);
