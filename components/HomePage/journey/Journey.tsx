@@ -33,6 +33,7 @@ type: "spring",
 // @ts-ignore
       heading.current.classList.add("start");
     }
+// @ts-ignore
     setHeight(ref.current.clientHeight);
   }, [isInView]);
 
