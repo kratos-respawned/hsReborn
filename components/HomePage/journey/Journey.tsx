@@ -20,8 +20,11 @@ export default function Journey() {
   const { scrollYProgress } = useScroll({ target: ref });
  // @ts-ignore
  const y = useSpring(useParallax(scrollYProgress, height), {
-    type: "spring",
-    stiffness: 100,
+    // @ts-ignore
+type: "spring",
+
+   // @ts-ignore
+ stiffness: 100,
     damping: 30,
   });
 
