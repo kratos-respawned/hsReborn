@@ -18,7 +18,7 @@ function AboutUs() {
         </p>
         <button
           className="rounded-full p-2 px-3 bg-hsBlue text-hsWhite navlink text-sm w-fit mx-auto lg:mx-0 "
-          alt="Learn More"
+         
         >
           Learn More
         </button>
