@@ -1,7 +1,15 @@
 "use client";
 import { motion, useAnimation, useInView } from "framer-motion";
+import { type } from "os";
 import { useEffect, useRef } from "react";
-export default function TimelineBox(props) {
+type Props = {
+  title: string;
+  year: string;
+  desc: string;
+  right?: boolean;
+  className?: string;
+};
+export default function TimelineBox(props: Props) {
   const ref = useRef(null);
   const inView = useInView(ref);
   const animation = useAnimation();

@@ -25,22 +25,18 @@ export default function Journey() {
   });
 
   useEffect(() => {
+    if (isInView) {
+      heading.current.classList.add("start");
+    }
     setHeight(ref.current.clientHeight);
   }, [isInView]);
 
   return (
     <main className="mt-0 md:mt-64 pb-16 relative">
       <div className="flex flex-col justify-center items-center gap-y-7  my-10 mb-16 relative">
-        <h2
-          ref={heading}
-          className="z-30 align-middle text-center block font-clashDisplay md:leading-[70px] font-medium md:font-semibold text-white text-4xl sm:text-6xl  "
-        >
+        <h2 className="z-30 align-middle text-center block font-clashDisplay md:leading-[70px] font-medium md:font-semibold text-white text-4xl sm:text-6xl  ">
           Our
-          <span
-            className={`cursor-pointer ml-5 hoverEffect ${
-              isInView ? "start" : " "
-            }`}
-          >
+          <span ref={heading} className={`cursor-pointer ml-5 hoverEffect `}>
             Journey
           </span>
         </h2>

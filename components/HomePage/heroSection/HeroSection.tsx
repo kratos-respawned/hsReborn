@@ -15,7 +15,6 @@ function HeroSection() {
         <button
           type="button"
           className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue text-hsWhite navlink text-sm"
-          alt="Learn More"
         >
           Learn More
         </button>
