@@ -10,7 +10,7 @@ export default function App({ Component, pageProps }: AppProps) {
         {/* <Nav /> */}
         <Component {...pageProps} />
       </main>
-      {/* <Footer /> */}
+      <Footer />
     </main>
   );
 }
