@@ -13,6 +13,10 @@ function Home() {
     <>
       <Head>
         <title>Home</title>
+        {/* set charset meta */}
+        <meta charSet="utf-8" />
+        {/* set viewport meta */}
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
       </Head>
       <HeroSection />
       <Members />

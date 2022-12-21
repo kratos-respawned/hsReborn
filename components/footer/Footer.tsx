@@ -1,6 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
-
+import {} from "@next/font/local";
 function Socials({ heightWidth = 22, className = "", override = false }) {
   let classes = "grid grid-cols-4 gap-1 " + className;
   if (override) {

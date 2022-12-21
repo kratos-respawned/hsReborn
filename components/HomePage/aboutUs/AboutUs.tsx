@@ -10,16 +10,13 @@ function AboutUs() {
         <h2 className="font-clashDisplay text-hsWhite text-center text-5xl lg:text-left sm:text-7xl">
           About Us
         </h2>
-        <p className="navlink text-base sm:text-lg text-hsWhite text-justify ">
+        <p className="font-montserrat text-base sm:text-lg text-hsWhite text-justify ">
           Hackoverflow Society (HS) is one of the fastest-growing North Indian
           student societies. Recognized NAAC A+ accredited Chandigarh
           University, it organizes university-level, national, and international
           hackathons, webinars, and workshops.
         </p>
-        <button
-          className="rounded-full p-2 px-3 bg-hsBlue text-hsWhite navlink text-sm w-fit mx-auto lg:mx-0 "
-         
-        >
+        <button className="rounded-full p-2 px-3 bg-hsBlue text-hsWhite font-montserrat text-sm md:text-base w-fit mx-auto lg:mx-0 ">
           Learn More
         </button>
       </div>

@@ -3,6 +3,8 @@ import hsLogo from "../navbar/navLogo.svg";
 import cu from "../navbar/cu.svg";
 import qs from "../navbar/qs.svg";
 import Link from "next/link";
+import { Montserrat } from "@next/font/google";
+
 function Navbar() {
   return (
     <header>
@@ -16,32 +18,32 @@ function Navbar() {
         </div>
         <ul className="flex space-x-4 text-[#e0e0e0]">
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               Home
             </Link>
           </li>
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               Events
             </Link>
           </li>
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               Initiatives
             </Link>
           </li>
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               Team
             </Link>
           </li>
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               About Us
             </Link>
           </li>
           <li>
-            <Link href="/" className="navlink text-sm">
+            <Link href="/" className="font-montserrat text-sm">
               Contact Us
             </Link>
           </li>

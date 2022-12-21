@@ -1,6 +1,4 @@
-"use client";
 import { motion, useAnimation, useInView } from "framer-motion";
-import { type } from "os";
 import { useEffect, useRef } from "react";
 type Props = {
   id: number;
@@ -38,7 +36,7 @@ export default function TimelineBox(props: Props) {
         initial={{ opacity: 0, x: axis }}
         ref={ref}
         animate={animation}
-        className={`  group overflow-hidden hover:shadow-[#452a91] hover:shadow-2xl  transition-shadow  relative flex flex-col items-start justify-start px-3 py-5 min-h-[220px] w-[400px] max-w-full md:w-[450px] rounded-l-3xl rounded-b-3xl ${props.className} `}
+        className={`  group overflow-hidden hover:shadow-[#643bd7] hover:shadow-2xl  transition-shadow  relative flex flex-col items-start justify-start px-3 py-5 min-h-[220px] w-[400px] max-w-full md:w-[450px] rounded-l-3xl rounded-b-3xl ${props.className} `}
         style={gradientStyle}
       >
         <div className="w-full h-full">
@@ -87,7 +85,7 @@ export default function TimelineBox(props: Props) {
             </span>
           </div>
 
-          <p className="text-sm text-[#bbb] h-full leading-6 mt-7 font-extralight font-generalSans tracking-wider ">
+          <p className="text-sm text-[#eee] h-full leading-6 mt-7 font-extralight font-generalSans tracking-wider text-justify ">
             {props.desc}
           </p>
           <div className="absolute bottom-0 right-0">

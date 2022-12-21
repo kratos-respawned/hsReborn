@@ -3,18 +3,18 @@ import hs from "../heroSection/hs.svg";
 function HeroSection() {
   return (
     <main className="flex flex-col-reverse lg:flex-row  items-center justify-between   lg:mt-10 pb-24 px-5 ">
-      <section className="max-w-[575px] space-y-5 lg:space-y-3  z-30 flex flex-col flex-grow lg:flex-grow-0 ">
+      <section className="max-w-[575px] space-y-5 lg:space-y-6  z-30 flex flex-col flex-grow lg:flex-grow-0 ">
         <h2 className="font-clashDisplay font-medium text-white  text-3xl md:text-5xl lg:text-6xl text-center lg:text-start ">
           Fastest growing student society in North India
         </h2>
-        <p className="navlink text-hsWhite leading-7 text-justify text-sm md:text-base">
+        <p className="font-montserrat text-hsWhite leading-7 text-center text-sm md:text-base">
           Created by the students for the students. Pioneered with the objective
           of integrating passionate and driven tech and non-tech enthusiasts
           across the world.
         </p>
         <button
           type="button"
-          className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue text-hsWhite navlink text-sm"
+          className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue text-hsWhite font-montserrat text-sm md:text-base"
         >
           Learn More
         </button>

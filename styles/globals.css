@@ -2,31 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer utilities{
-.navlink {
-        font-family: 'Montserrat', sans-serif;
-    }
-}
-
-@font-face {
-    font-family: 'ClashDisplay-Medium';
-    src: url('../fonts/ClashDisplay/ClashDisplay-Medium.woff2') format('woff2'),
-        url('../fonts/ClashDisplay/ClashDisplay-Medium.woff') format('woff'),
-        url('../fonts/ClashDisplay/ClashDisplay-Medium.ttf') format('truetype');
-    font-weight: 500;
-    font-display: swap;
-    font-style: normal;
-}
-
-@font-face {
-    font-family: 'GeneralSans-Medium';
-    src: url('../fonts/generalSans/GeneralSans-Light.woff2') format('woff2'),
-        url('../fonts/generalSans/GeneralSans-Light.woff') format('woff'),
-        url('../fonts/generalSans/GeneralSans-Light.ttf') format('truetype');
-    font-weight: 200;
-    font-display: swap;
-    font-style: normal;
-}
 
 *::selection {
     background-color: #f81ce5;
@@ -72,10 +47,11 @@
         padding-bottom: calc(2.1 * var(--s));
         background: conic-gradient(from 135deg at top, var(--c) 90deg, #0000 0) left 0 bottom var(--s) / calc(2 * var(--s)) var(--s) repeat-x,
             conic-gradient(from -45deg at bottom, var(--c) 90deg, #0000 0) left var(--s) bottom 0 / calc(2 * var(--s)) var(--s) repeat-x;
-        mask: linear-gradient(#000 0 0) content-box,
-            linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
         -webkit-mask: linear-gradient(#000 0 0) content-box,
+                linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
+            mask: linear-gradient(#000 0 0) content-box,
             linear-gradient(#000 0 0) 0 / var(--_p, 0%) padding-box no-repeat;
+       
         transition: 0.8s;
     }
 

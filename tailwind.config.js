@@ -12,10 +12,6 @@ module.exports = {
         hsBlue: '#4A19C4',
         hsWhite:'#EEEEEE'
       },
-      fontFamily: {
-        clashDisplay: ["ClashDisplay-Medium"],
-        generalSans: ["GeneralSans-Medium"],
-  },
     },
     plugins: [],
   }
