@@ -7,34 +7,29 @@ import {
   useScroll,
   useSpring,
   useTransform,
+  MotionValue,
 } from "framer-motion";
-// @ts-ignore
-function useParallax(value, distance) {
+
+function useParallax(value: MotionValue, distance: number) {
   return useTransform(value, [0, 1], [0, distance]);
 }
 export default function Journey() {
-  const heading = useRef(null);
+  const heading = useRef<HTMLElement>(null);
   const isInView = useInView(heading, { amount: 1 });
-  const ref = useRef(null);
+  const ref = useRef<HTMLElement>(null);
   const [height, setHeight] = React.useState(100);
   const { scrollYProgress } = useScroll({ target: ref });
- // @ts-ignore
- const y = useSpring(useParallax(scrollYProgress, height), {
-    // @ts-ignore
-type: "spring",
-
-   // @ts-ignore
- stiffness: 100,
+  const y = useSpring(useParallax(scrollYProgress, height), {
+    stiffness: 100,
     damping: 30,
   });
 
   useEffect(() => {
     if (isInView) {
-// @ts-ignore
-      heading.current.classList.add("start");
+      heading.current?.classList.add("start");
     }
-// @ts-ignore
-    setHeight(ref.current.clientHeight!);
+
+    setHeight(ref.current?.clientHeight!);
   }, [isInView]);
 
   return (
@@ -63,7 +58,7 @@ type: "spring",
           ></motion.div>
         </div>
 
-        {Timeline.map((e, index) => {
+        {timeline.map((e, index) => {
           return (
             <Fragment key={index}>
               {e.id % 2 != 0 ? <div className="hidden md:block"></div> : null}
@@ -88,45 +83,50 @@ type: "spring",
     </main>
   );
 }
-
-export const Timeline = [
+interface Timeline {
+  id: number;
+  title: string;
+  year: string;
+  description: string;
+}
+const timeline: Timeline[] = [
   {
-    id: "1",
+    id: 1,
     title: "The First Milestone",
     year: "2017",
     description:
       "Hackoverflow 1.0 was Chandigarh University’s first-ever national hackathon, pioneered by our co-founders Ayonika Dey and Karan Bhargav. It was an official event of the university’s tech festival and was one of the mega-events.",
   },
   {
-    id: "2",
+    id: 2,
     title: "The Turning Point",
     year: "2018",
     description:
       "Hackoverflow 2.0 was awarded the best event at the annual tech festival of CU – “Tech Invent”. It took the team almost 15 days to get an event promoted by Chandigarh University earlier, but now it is just 30 minutes.",
   },
   {
-    id: "3",
+    id: 3,
     title: "The Rebirth",
     year: "2019",
     description:
       "The building blocks of the community were established with Amit Kumar Mishra, who proved his capabilities by organizing the AIT day, which is now an annual event for the Apex Institute of Technology. Karan Bhargav was appointed as the Director, Ayonika Dey as the President, and Harshiv as the Vice-President. The team began working on pan-India outreach and the Campus Ambassador program was brought to execution.",
   },
   {
-    id: "4",
+    id: 4,
     title: "The Show Stealer",
     year: "2020",
     description:
       "Hackoverflow 3.0 received more than 3,500 registrations. 50 teams from all over India participated in the event. The event began with more than 50 dedicated volunteers and 250 participants. During the valedictory ceremony, the Hon’ble Chancellor of Chandigarh University officially launched the Hackoverflow Technical Society.",
   },
   {
-    id: "5",
+    id: 5,
     title: "The Streak",
     year: "2020 - 2021",
     description:
       "Despite the pandemic, society has organized a plethora of events. We kicked off the streak with the much-anticipated Membership Program, followed by Hack 1-on-1. The new recruitments pumped up the society and organized Genesis 1.0. Later on, the Hackoverflow Society organized the Freshers’ Carnival – a fun event for newcomers to get to know each other.",
   },
   {
-    id: "6",
+    id: 6,
     title: "The Present",
     year: "2021",
     description:

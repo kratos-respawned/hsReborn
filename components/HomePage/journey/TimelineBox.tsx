@@ -3,6 +3,7 @@ import { motion, useAnimation, useInView } from "framer-motion";
 import { type } from "os";
 import { useEffect, useRef } from "react";
 type Props = {
+  id: number;
   title: string;
   year: string;
   desc: string;
