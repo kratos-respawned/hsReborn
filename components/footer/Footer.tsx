@@ -44,7 +44,7 @@ export default function Footer({ className = "" }) {
       <footer className={classes}>
         <div className="flex  flex-col lg:justify-between lg:flex-row lg:mx-28 gap-x-3">
           {/* Logo and other content */}
-          <div className="w-64 self-center lg:self-auto">
+          <div className="basis-1/3 self-center lg:self-auto">
             <div className="flex flex-col lg:flex-row items-center mb-20 lg:mb-4">
               <div className="mb-5 lg:mb-0 lg:pr-3">
                 <div className="hidden lg:block">
@@ -87,7 +87,7 @@ export default function Footer({ className = "" }) {
               <Socials heightWidth={29} className="lg:hidden gap-6" />
             </div>
 
-            <p className="hidden lg:block text-slate-100 font-generalSans font-light text-sm  text-left  leading-5">
+            <p className="hidden lg:block text-slate-100 font-generalSans font-light text-base  leading-5">
               Hackoverflow Society is a student-driven technical society
               recognized by Chandigarh University. It was officially inducted as
               a society by the Hon&apos;ble Chancellor of Chandigarh University

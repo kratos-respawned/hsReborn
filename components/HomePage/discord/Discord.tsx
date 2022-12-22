@@ -41,7 +41,7 @@ function Discord() {
         Join our Discord
       </h2>
 
-      <div className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,800px)] h-[min(90vw,800px)]    bg-hsBlack inner shadow-violet  ">
+      <div className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,900px)] h-[min(90vw,900px)]    bg-hsBlack inner shadow-violet  ">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  w-[70%] h-[70%]    inner shadow-violet ">
           <motion.div
             style={{
