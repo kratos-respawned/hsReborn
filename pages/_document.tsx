@@ -4,6 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
+        {/* <meta charSet="utf-8" /> */}
         <link rel="icon" href="/favicon.svg" />
       </Head>
       <body>
