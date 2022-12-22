@@ -1,7 +1,13 @@
 "use client";
 import Image from "next/image";
 import Bubble from "./Bubble";
-import { useScroll, motion, useTransform, MotionValue } from "framer-motion";
+import {
+  useScroll,
+  motion,
+  useTransform,
+  MotionValue,
+  useSpring,
+} from "framer-motion";
 import { useEffect, useRef, useState } from "react";
 function useParallax(value: MotionValue, distance: number) {
   if (typeof window !== "undefined") {
@@ -27,19 +33,19 @@ function Discord() {
     }
   }, []);
   return (
-    <section className="  mb-28 overflow-hidden  relative z-40">
-      <h2 className=" mt-6 translate-y-10 sm:translate-y-20 text-center font-clashDisplay text-white  text-3xl sm:text-5xl">
+    <section
+      ref={circleRef}
+      className=" mt-6  mb-28 overflow-hidden  relative z-40"
+    >
+      <h2 className=" translate-y-10 sm:translate-y-20 text-center font-clashDisplay text-white  text-3xl sm:text-5xl">
         Join our Discord
       </h2>
 
-      <div
-        ref={circleRef}
-        className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,800px)] h-[min(90vw,800px)]    bg-hsBlack inner shadow-violet  "
-      >
+      <div className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,800px)] h-[min(90vw,800px)]    bg-hsBlack inner shadow-violet  ">
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  w-[70%] h-[70%]    inner shadow-violet ">
           <motion.div
             style={{
-              scale: useParallax(scrollYProgress, distance),
+              scale: useSpring(useParallax(scrollYProgress, distance)),
             }}
             className="relative w-full h-full "
           >
@@ -57,7 +63,7 @@ function Discord() {
           <div className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full min-w-min w-[60%] h-[60%]  inner shadow-violet ">
             <motion.div
               style={{
-                scale: useParallax(scrollYProgress, distance),
+                scale: useSpring(useParallax(scrollYProgress, distance)),
               }}
               className="relative w-full h-full flex flex-col justify-center items-center gap-y-2"
             >
