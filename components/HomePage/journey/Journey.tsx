@@ -28,12 +28,11 @@ export default function Journey() {
     if (isInView) {
       heading.current?.classList.add("start");
     }
-
-    setHeight(ref.current?.clientHeight!);
+    if (ref.current?.clientHeight) setHeight(ref.current?.clientHeight);
   }, [isInView]);
 
   return (
-    <main className="mt-0 md:mt-64 pb-16 relative">
+    <main ref={ref} className="mt-0 md:mt-64 pb-16 relative">
       <div className="flex flex-col justify-center items-center gap-y-7  my-10 mb-16 relative">
         <h2 className="z-30 align-middle text-center block font-clashDisplay md:leading-[70px] font-medium md:font-semibold text-white text-4xl sm:text-6xl  ">
           Our
@@ -47,14 +46,11 @@ export default function Journey() {
         <div className="bg-hsPink w-32 h-32 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px] absolute -top-16 sm:top-0 left-3/4" />
       </div>
 
-      <section
-        ref={ref}
-        className="mx-auto relative  z-10 px-7 grid  grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-9 gap-y-12 lg:gap-y-4 place-items-center   h-full pb-20 w-full"
-      >
+      <section className="mx-auto relative  z-10 px-7 grid  grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-9 gap-y-12 lg:gap-y-4 place-items-center   h-full pb-20 w-full">
         <div className="absolute top-0 overflow-hidden left-0 md:-translate-x-1/2 md:left-1/2 rounded-full  sm:left-7 h-full w-4 bg-[#282828] ">
           <motion.div
             style={{ height: y }}
-            className=" h-[13%] w-full rounded-full bg-[#DE5FFE]"
+            className=" w-full rounded-full bg-[#DE5FFE]"
           ></motion.div>
         </div>
 

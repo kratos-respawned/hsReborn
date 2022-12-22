@@ -1,6 +1,6 @@
 function AboutUs() {
   return (
-    <section className="grid  lg:grid-cols-2 gap-x-10 sm:mt-40 py-48 md:py-40 items-center px-5 z-10">
+    <section className="grid  lg:grid-cols-2 gap-x-10 sm:mt-40 my-10 py-52 md:py-40 items-center px-5 z-10">
       <div className="relative h-full ">
         <div className="bg-hsBlue w-80 h-80 lg:w-[480px] lg:h-[480px] blur-3xl  rounded-full absolute -top-10 left-0 -z-0 opacity-80 sm:opacity-100">
           <div className="bg-hsPink w-36 h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100" />
