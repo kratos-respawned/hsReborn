@@ -1,6 +1,12 @@
 import Image from "next/image";
 import Link from "next/link";
-import {} from "@next/font/local";
+import hs from "../HomePage/navbar/navLogo.svg";
+import {
+  AiFillTwitterSquare,
+  AiFillFacebook,
+  AiFillInstagram,
+} from "react-icons/ai";
+import { FaDiscord } from "react-icons/fa";
 function Socials({ heightWidth = 22, className = "", override = false }) {
   let classes = "grid grid-cols-4 gap-1 " + className;
   if (override) {
@@ -11,39 +17,19 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
     <>
       <div className={classes}>
         <a href="https://twitter.com/Hackoverflow3">
-          <Image
-            src="/footer/twitter.svg"
-            alt="twitter icon"
-            height={heightWidth}
-            width={heightWidth}
-          />
+          <AiFillTwitterSquare color="white" size={heightWidth} />
         </a>
 
         <a href="https://discord.gg/beWGASaKAt">
-          <Image
-            src="/footer/discord.svg"
-            alt="discord icon"
-            height={heightWidth}
-            width={heightWidth}
-          />
+          <FaDiscord color="white" size={heightWidth} />
         </a>
 
         <a href="https://www.instagram.com/hackoverflowsociety/">
-          <Image
-            src="/footer/instagram.svg"
-            alt="instagram icon"
-            height={heightWidth}
-            width={heightWidth}
-          />
+          <AiFillInstagram color="white" size={heightWidth} />
         </a>
 
         <a href="https://www.facebook.com/HACKOVERFLOW3">
-          <Image
-            src="/footer/facebook.svg"
-            alt="facebook icon"
-            height={heightWidth}
-            width={heightWidth}
-          />
+          <AiFillFacebook color="white" size={heightWidth} />
         </a>
       </div>
     </>
@@ -51,28 +37,28 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
 }
 
 export default function Footer({ className = "" }) {
-  const classes = "p-4 bg-hsBlack md:p-6 " + className;
+  const classes = "p-4 bg-hsBlack lg:p-6 " + className;
 
   return (
     <>
       <footer className={classes}>
-        <div className="flex  flex-col md:justify-between md:flex-row md:mx-28">
+        <div className="flex  flex-col lg:justify-between lg:flex-row lg:mx-28 gap-x-3">
           {/* Logo and other content */}
-          <div className="w-64 self-center md:self-auto">
-            <div className="flex flex-col md:flex-row items-center mb-20 md:mb-4">
-              <div className="mb-5 md:mb-0 md:pr-3">
-                <div className="hidden md:block">
+          <div className="w-64 self-center lg:self-auto">
+            <div className="flex flex-col lg:flex-row items-center mb-20 lg:mb-4">
+              <div className="mb-5 lg:mb-0 lg:pr-3">
+                <div className="hidden lg:block">
                   <Image
-                    src="/hsLogo.png"
+                    src={hs}
                     width={57}
                     height={59}
                     alt="Hackoverflow Logo"
                   />
                 </div>
 
-                <div className="md:hidden">
+                <div className="lg:hidden">
                   <Image
-                    src="/hsLogo.png"
+                    src={hs}
                     width={94}
                     height={97}
                     alt="Hackoverflow Logo"
@@ -80,26 +66,28 @@ export default function Footer({ className = "" }) {
                 </div>
               </div>
 
-              <div className="text-white text-center mb-7 md:mb-0 md:text-left  whitespace-nowrap">
+              <div className="text-white text-center mb-7 lg:mb-0 lg:text-left  whitespace-nowrap">
                 {/* Footer title */}
-                <span className="self-center text-xl font-bold">
-                  <span className="hidden md:inline">Hackoverflow</span>
-                  <span className="md:hidden">For Students By Students</span>
+                <span className="self-center text-xl font-bold font-clashDisplay">
+                  <span className="hidden lg:inline tracking-wider">
+                    Hackoverflow
+                  </span>
+                  <span className="lg:hidden">For Students By Students</span>
                 </span>
 
                 <br />
 
                 {/* sub-title */}
-                <span className="font-normal">
-                  <span className="hidden md:inline">Society</span>
-                  <span className="md:hidden">Be Part of The Change</span>
+                <span className="font-clashDisplay">
+                  <span className="hidden lg:inline text-xl">Society</span>
+                  <span className="lg:hidden">Be Part of The Change</span>
                 </span>
               </div>
 
-              <Socials heightWidth={29} className="md:hidden gap-6" />
+              <Socials heightWidth={29} className="lg:hidden gap-6" />
             </div>
 
-            <p className="hidden md:block text-slate-100">
+            <p className="hidden lg:block text-slate-100 font-generalSans font-light text-sm  text-left  leading-5">
               Hackoverflow Society is a student-driven technical society
               recognized by Chandigarh University. It was officially inducted as
               a society by the Hon&apos;ble Chancellor of Chandigarh University
@@ -108,10 +96,10 @@ export default function Footer({ className = "" }) {
           </div>
 
           {/* Grid for navigation */}
-          <div className="grid grid-cols-2 md:grid-cols-3 gap-1 text-white">
+          <div className="gap-x-4 grid grid-cols-2 lg:grid-cols-3 gap-1 text-white">
             {/* Events column */}
-            <div className="justify-self-center">
-              <h3 className="mb-6 md:mt-0 text-base poppinsRegular font-semibold">
+            <div className="justify-self-center font-generalSans">
+              <h3 className="mb-6 lg:mt-0 text-base font-clashDisplay tracking-wider font-semibold">
                 Events
               </h3>
               <ul>
@@ -146,8 +134,8 @@ export default function Footer({ className = "" }) {
             </div>
 
             {/* Contact info column */}
-            <div className="justify-self-center">
-              <h3 className="mb-6 text-base poppinsRegular font-semibold">
+            <div className="justify-self-center font-generalSans">
+              <h3 className="mb-6 text-base font-clashDisplay tracking-wider font-semibold">
                 Contact Us
               </h3>
               <ul>
@@ -161,7 +149,7 @@ export default function Footer({ className = "" }) {
                   <a href="tel:+91 7357610734">+91 7357610734</a>
                 </li>
 
-                <li className="mb-4 md:hidden">
+                <li className="mb-4 lg:hidden">
                   <a
                     href="https://cuchd.in"
                     target="_blank"
@@ -177,8 +165,8 @@ export default function Footer({ className = "" }) {
             </div>
 
             {/* Mini-Contact form */}
-            <div className="hidden md:flex flex-col items-end justify-between">
-              <div className="hidden md:grid grid-cols-2 text-white font-bold uppercase">
+            <div className="hidden lg:flex flex-col items-end justify-between">
+              <div className="hidden lg:grid grid-cols-2 text-white font-bold uppercase">
                 <div>Follow Us</div>
 
                 <Socials />
@@ -187,11 +175,11 @@ export default function Footer({ className = "" }) {
           </div>
         </div>
 
-        <hr className="mb-3 mt-8 md:mt-16 border-gray-700 md:mx-auto" />
+        <hr className="mb-3 mt-8 lg:mt-16 border-gray-700 lg:mx-auto" />
 
         <div className="flex flex-col items-center justify-between text-sm text-gray-400">
-          <span className="md:text-center">
-            © 2022,{" "}
+          <span className="lg:text-center space-x-2 font-Montserrat">
+            © 2022,
             <Link
               href="/"
               rel="noreferrer"
@@ -201,7 +189,7 @@ export default function Footer({ className = "" }) {
             </Link>
             , All Rights Reserved
           </span>
-          <h4 className="hidden md:block">
+          <h4 className="hidden lg:block font-Montserrat">
             <a href="https://cuchd.in" target="_blank" rel="noreferrer">
               Chandigarh University, Gharuan, Mohali, Punjab, India
             </a>
@@ -216,7 +204,7 @@ export default function Footer({ className = "" }) {
 <div className="flex flex-col items-end">
                 <h3 className="mb-6 text-3xl flex-1 cdisplaySemibold">Reach Us</h3>
 
-                <form className="flex flex-col items-end mb-6 md:mb-0">
+                <form className="flex flex-col items-end mb-6 lg:mb-0">
                   <input
                     type="text"
                     name="message"
