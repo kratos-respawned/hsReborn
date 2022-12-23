@@ -10,7 +10,7 @@ import Members from "../components/HomePage/members/Members";
 import Partners from "../components/HomePage/partners/Partners";
 import Loader from "../components/loaders/Loader";
 function Home() {
-  const [loading, setLoading] = useState(false);
+  const [loading, setLoading] = useState(true);
   return (
     <>
       <Head>
