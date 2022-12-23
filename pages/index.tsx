@@ -21,11 +21,10 @@ function Home() {
       <AnimatePresence>
         {loading ? (
           <motion.div key="loader">
-            {/* <Loader setLoading={setLoading} /> */}
+            <Loader setLoading={setLoading} />
           </motion.div>
         ) : (
           <>
-            {/* <Loader setLoading={setLoading} /> */}
             <HeroSection />
             <Members />
             <AboutUs />
