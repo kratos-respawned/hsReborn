@@ -25,7 +25,7 @@ export default function TimelineBox(props: Props) {
         },
       });
     }
-  }, [inView]);
+  }, [inView, animation]);
   const gradientStyle = {
     background:
       "linear-gradient(0deg, rgba(18, 18, 18, 0.1), rgba(18, 18, 18, 0.6)), linear-gradient(90deg, #0F0E0E 4.89%, rgba(21, 21, 21, 0) 100%)",

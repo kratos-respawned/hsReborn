@@ -13,13 +13,14 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Home</title>
       </Head>
+
       <HeroSection />
-      <Members />
-      <AboutUs />
-      <Journey />
-      <Partners />
-      <Initiatives />
-      <Discord />
+      {/* <Members /> */}
+      {/* <AboutUs /> */}
+      {/* <Journey /> */}
+      {/* <Partners /> */}
+      {/* <Initiatives /> */}
+      {/* <Discord /> */}
     </>
   );
 }
