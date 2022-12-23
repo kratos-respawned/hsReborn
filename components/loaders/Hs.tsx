@@ -1,6 +1,7 @@
 import React from "react";
 import { motion } from "framer-motion";
-function HsLoaderImage() {
+import { Props } from "./Loader";
+function HsLoaderImage({ setLoading }: Props) {
   const container = {
     show: {
       transition: {
@@ -27,6 +28,9 @@ function HsLoaderImage() {
   return (
     <>
       <motion.svg
+        onAnimationComplete={() => {
+          setLoading(false);
+        }}
         width="388"
         height="419"
         viewBox="0 0 388 419"
