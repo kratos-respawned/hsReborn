@@ -1,6 +1,7 @@
 import Image from "next/image";
 import hs from "../heroSection/hs.svg";
 import { motion } from "framer-motion";
+import HsLoaderImage from "../../loaders/Hs";
 function HeroSection() {
   return (
     <main className="flex flex-col-reverse lg:flex-row  items-center justify-between   lg:mt-10 pb-24 px-5 ">
@@ -21,7 +22,7 @@ function HeroSection() {
         </button>
       </section>
       <section className="py-3 lg:py-6 flex-grow-0 lg:flex-grow relative z-10 ">
-        <motion.div>
+        <motion.div layoutId="loader">
           <Image
             src={hs}
             alt="hero section Logo "

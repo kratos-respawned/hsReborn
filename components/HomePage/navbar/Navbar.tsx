@@ -21,7 +21,7 @@ function Navbar() {
           <Image src={qs} width={93} height={30} alt="qs logo" />
         </div>
         <ul
-          className={`z-50 absolute bg-[#0000118a] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${
+          className={`z-50 lg:z-0 absolute bg-[#0000118a] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${
             navVisibility ? "-translate-x-0 " : "translate-x-full"
           } transition-transform h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
         >
@@ -101,7 +101,7 @@ function Navbar() {
         <button
           title="menu"
           aria-label="menu"
-          className="z-[999] block absolute top-10 right-7  lg:hidden"
+          className="z-40 block absolute top-10 right-7  lg:hidden"
           onClick={() => {
             setNavVisibility(!navVisibility);
           }}
