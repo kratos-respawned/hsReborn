@@ -29,7 +29,7 @@ function HsLoaderImage({ setLoading }: Props) {
     <>
       <motion.svg
         onAnimationComplete={() => {
-          // setLoading(false);
+          setLoading(false);
         }}
         width="388"
         height="419"
