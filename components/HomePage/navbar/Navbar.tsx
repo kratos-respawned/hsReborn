@@ -101,7 +101,7 @@ function Navbar() {
         <button
           title="menu"
           aria-label="menu"
-          className="z-40 block absolute top-10 right-7  lg:hidden"
+          className="z-[50] block absolute top-10 right-7  lg:hidden"
           onClick={() => {
             setNavVisibility(!navVisibility);
           }}
