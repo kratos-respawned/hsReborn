@@ -1,7 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
-import { AiOutlineClose } from "react-icons/ai";
+import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useState } from "react";
 function Navbar() {
@@ -103,12 +103,12 @@ function Navbar() {
             setNavVisibility(!navVisibility);
           }}
         >
-          <GiHamburgerMenu
+          <AiOutlineMenuFold
             className={`${
               navVisibility ? " hidden " : " block "
             } text-[#e0e0e0] text-2xl`}
           />
-          <AiOutlineClose
+          <AiOutlineMenuUnfold
             className={`${
               navVisibility ? " block " : " hidden "
             }text-[#e0e0e0] text-2xl`}
