@@ -5,7 +5,7 @@ function HsLoaderImage({ setLoading }: Props) {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.01,
+        staggerChildren: 0.05,
       },
     },
   };
