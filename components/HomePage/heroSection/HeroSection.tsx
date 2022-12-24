@@ -2,12 +2,12 @@ import Image from "next/image";
 import { motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 function HeroSection() {
-  let height = useRef(417);
+  let height = useRef(415);
   let width = useRef(384);
   useEffect(() => {
     if (window?.innerWidth < 1024) {
-      height.current = 250;
-      width.current = 225;
+      height.current = 309.6;
+      width.current = 288;
     }
   }, []);
   return (
@@ -33,7 +33,7 @@ function HeroSection() {
           <Image
             src="/hsLogo.png"
             alt="hero section Logo "
-            className="mx-auto h-80 w-72 lg:w-96 lg:h-[417px] z-10 relative "
+            className="mx-auto  z-10 relative "
             width={width.current}
             height={height.current}
             priority

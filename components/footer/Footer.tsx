@@ -15,19 +15,22 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
   return (
     <>
       <div className={classes}>
-        <a href="https://twitter.com/Hackoverflow3">
+        <a href="https://twitter.com/Hackoverflow3" title="twitter">
           <AiFillTwitterSquare color="white" size={heightWidth} />
         </a>
 
-        <a href="https://discord.gg/beWGASaKAt">
+        <a href="https://discord.gg/beWGASaKAt" title="discord server link">
           <FaDiscord color="white" size={heightWidth} />
         </a>
 
-        <a href="https://www.instagram.com/hackoverflowsociety/">
+        <a
+          href="https://www.instagram.com/hackoverflowsociety/"
+          title="instagram"
+        >
           <AiFillInstagram color="white" size={heightWidth} />
         </a>
 
-        <a href="https://www.facebook.com/HACKOVERFLOW3">
+        <a href="https://www.facebook.com/HACKOVERFLOW3" title="facebook">
           <AiFillFacebook color="white" size={heightWidth} />
         </a>
       </div>
@@ -49,8 +52,8 @@ export default function Footer({ className = "" }) {
                 <div className="hidden lg:block">
                   <Image
                     src="/hsLogo.png"
-                    width={57}
-                    height={59}
+                    width={64}
+                    height={69}
                     alt="Hackoverflow Logo"
                   />
                 </div>
