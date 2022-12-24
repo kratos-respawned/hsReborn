@@ -1,9 +1,18 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
+import { useEffect, useRef } from "react";
 function HeroSection() {
+  let height = useRef(417);
+  let width = useRef(384);
+  useEffect(() => {
+    if (window?.innerWidth < 1024) {
+      height.current = 250;
+      width.current = 225;
+    }
+  }, []);
   return (
-    <main className="flex flex-col-reverse lg:flex-row  items-center justify-between   lg:mt-10 pb-24 px-5 ">
-      <section className="max-w-[575px] space-y-5 lg:space-y-6  z-30 flex flex-col flex-grow lg:flex-grow-0 ">
+    <main className="flex flex-col-reverse lg:flex-row  items-center justify-between lg:gap-2   lg:mt-10 pb-24 px-5 ">
+      <section className="max-w-[580px] lg:max-w-[575px] space-y-5 lg:space-y-6  z-30 flex flex-col flex-grow lg:flex-grow-0 ">
         <h2 className="font-clashDisplay font-medium text-white  text-3xl md:text-5xl lg:text-6xl text-center lg:text-start ">
           Fastest growing student society in North India
         </h2>
@@ -20,13 +29,13 @@ function HeroSection() {
         </button>
       </section>
       <section className="py-3 lg:py-6 flex-grow-0 lg:flex-grow relative z-10 ">
-        <motion.div layoutId="loader">
+        <motion.div layout layoutId="loader">
           <Image
             src="/hsLogo.png"
             alt="hero section Logo "
-            className="mx-auto h-72 w-72 lg:w-96 lg:h-96"
-            width={387}
-            height={417}
+            className="mx-auto h-80 w-72 lg:w-96 lg:h-[417px] z-10 relative "
+            width={width.current}
+            height={height.current}
             priority
           />
         </motion.div>

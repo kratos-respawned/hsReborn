@@ -78,7 +78,7 @@ function Discord() {
               </div>
               <button
                 type="button"
-                className="rounded-full navlink font-light  w-fit mx-auto lg:mx-0 p-2 sm:px-3 bg-hsBlue text-hsWhite font-montserrat  hidden lg:block text-sm"
+                className="rounded-full navlink   w-fit mx-auto lg:mx-0 p-2 sm:px-3 bg-hsBlue text-hsWhite font-montserrat  hidden lg:block text-sm"
               >
                 Join the server
               </button>

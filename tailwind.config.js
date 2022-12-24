@@ -10,7 +10,7 @@ module.exports = {
         hsBlack: '#140F1B',
         hsPink: '#ff00c3',
         hsBlue: '#4A19C4',
-        hsWhite:'#EEEEEE'
+        hsWhite: '#EEEEEE'
       },
       fontFamily: {
         clashDisplay: ["ClashDisplay-Medium"],

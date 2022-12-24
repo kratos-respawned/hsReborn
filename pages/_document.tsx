@@ -2,7 +2,7 @@ import { Html, Head, Main, NextScript } from "next/document";
 
 export default function Document() {
   return (
-    <Html lang="en" title="hello world">
+    <Html lang="en">
       <Head>
         <link rel="icon" href="/favicon.svg" />
         <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -16,10 +16,6 @@ export default function Document() {
           href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
           rel="stylesheet"
         ></link>
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
-        </style>
       </Head>
       <body>
         <Main />

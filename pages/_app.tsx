@@ -11,13 +11,10 @@ export default function App({ Component, pageProps }: AppProps) {
   return (
     <AnimatePresence>
       <Head>
-        <meta
-          name="viewport"
-          content="width=device-width; initial-scale=1.0;"
-        />
+        <meta name="viewport" content="width=device-width initial-scale=1.0" />
       </Head>
       {loading ? (
-        <motion.div key="loader">
+        <motion.div>
           <Loader setLoading={setLoading} />
         </motion.div>
       ) : (
@@ -26,9 +23,9 @@ export default function App({ Component, pageProps }: AppProps) {
             <main className="max-w-screen-xl mx-auto ">
               <Navbar />
               <Component {...pageProps} />
+              <Footer />
             </main>
           </main>
-          <Footer />
         </>
       )}
     </AnimatePresence>

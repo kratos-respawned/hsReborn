@@ -9,8 +9,8 @@ export default function Initiatives() {
       <main className="mt-52 md:mt-36 relative  w-full h-full ">
         <section className="z-30 flex flex-col w-full h-full  border-none ">
           <section className="flex-col gap-y-12 h-full bg-transparent z-40 flex justify-start items-center relative">
-            <div className="bg-hsPink w-20 h-20 sm:h-40 sm:w-40 blur-3xl  absolute right-0 -top-12 sm:top-0 -z-10" />
-            <div className="bg-hsBlue w-32 h-32 sm:h-72 sm:w-72 blur-3xl sm:blur-[110px]  absolute -left-9  -bottom-24 sm:-bottom-4 -z-10" />
+            <div className="bg-[#FF1BBB] w-20 h-20 sm:h-40 sm:w-40 blur-3xl  absolute right-0 -top-12 sm:top-0 -z-10" />
+            <div className="bg-[#623FFF]  w-32 h-32 sm:h-72 sm:w-72 blur-3xl sm:blur-[110px]  absolute -left-9  -bottom-24 sm:-bottom-4 -z-10" />
             <div className="flex flex-col  items-center justify-center max-w-[658px] relative">
               <div className="font-clashDisplay font-medium text-[#fff] text-4xl md:text-6xl">
                 Our Initiatives

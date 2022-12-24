@@ -5,7 +5,7 @@ function HsLoaderImage({ setLoading }: Props) {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.05,
+        staggerChildren: 0.03,
       },
       hide: {
         opacity: 0,
@@ -14,7 +14,9 @@ function HsLoaderImage({ setLoading }: Props) {
   };
   const item = {
     hidden: { pathLength: 0 },
-    show: { pathLength: 1 },
+    show: {
+      pathLength: 1,
+    },
   };
   const dot = {
     hidden: { opacity: 0, scale: 0 },

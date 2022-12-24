@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import hs from "../HomePage/navbar/navLogo.svg";
 import {
   AiFillTwitterSquare,
   AiFillFacebook,
@@ -37,7 +36,7 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
 }
 
 export default function Footer({ className = "" }) {
-  const classes = "p-4 bg-hsBlack lg:p-6 -z-10 relative " + className;
+  const classes = "p-4 bg-hsBlack lg:p-6  relative " + className;
 
   return (
     <>
@@ -49,7 +48,7 @@ export default function Footer({ className = "" }) {
               <div className="mb-5 lg:mb-0 lg:pr-3">
                 <div className="hidden lg:block">
                   <Image
-                    src={hs}
+                    src="/hsLogo.png"
                     width={57}
                     height={59}
                     alt="Hackoverflow Logo"
@@ -58,7 +57,7 @@ export default function Footer({ className = "" }) {
 
                 <div className="lg:hidden">
                   <Image
-                    src={hs}
+                    src="/hsLogo.png"
                     width={94}
                     height={97}
                     alt="Hackoverflow Logo"

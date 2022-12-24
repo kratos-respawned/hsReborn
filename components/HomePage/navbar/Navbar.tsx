@@ -1,7 +1,4 @@
 import Image from "next/image";
-import hsLogo from "../navbar/navLogo.svg";
-import cu from "../navbar/cu.svg";
-import qs from "../navbar/qs.svg";
 import Link from "next/link";
 import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineClose } from "react-icons/ai";
@@ -15,10 +12,10 @@ function Navbar() {
       <nav className="relative flex items-center justify-between py-7 px-5 ">
         <div className="flex space-x-4 items-center sm:scale-100 scale-90 ">
           <Link href="/">
-            <Image src={hsLogo} width={51} height={53} alt="hs logo" />
+            <Image src="/hsLogo.png" width={51} height={53} alt="hs logo" />
           </Link>
-          <Image src={cu} width={95} height={34} alt="cu logo" />
-          <Image src={qs} width={93} height={30} alt="qs logo" />
+          <Image src="/navbar/cu.png" width={95} height={34} alt="cu logo" />
+          <Image src="/navbar/qs.png" width={93} height={30} alt="qs logo" />
         </div>
         <ul
           className={`z-50 lg:z-0 absolute bg-[#0000118a] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${
