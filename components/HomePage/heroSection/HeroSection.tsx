@@ -24,7 +24,7 @@ function HeroSection() {
           <Image
             src="/hsLogo.png"
             alt="hero section Logo "
-            className="mx-auto h-72 lg:h-96"
+            className="mx-auto h-72 w-72 lg:w-96 lg:h-96"
             width={387}
             height={417}
             priority

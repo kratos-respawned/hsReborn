@@ -39,7 +39,7 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/test"
               className={`  navlink ${
                 router.pathname === "Events"
                   ? " pointer-events-none"

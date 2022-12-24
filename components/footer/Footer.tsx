@@ -37,7 +37,7 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
 }
 
 export default function Footer({ className = "" }) {
-  const classes = "p-4 bg-hsBlack lg:p-6 " + className;
+  const classes = "p-4 bg-hsBlack lg:p-6 -z-10 relative " + className;
 
   return (
     <>

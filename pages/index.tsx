@@ -10,31 +10,19 @@ import Members from "../components/HomePage/members/Members";
 import Partners from "../components/HomePage/partners/Partners";
 import Loader from "../components/loaders/Loader";
 function Home() {
-  const [loading, setLoading] = useState(true);
   return (
     <>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <title>Home</title>
       </Head>
-
-      <AnimatePresence>
-        {loading ? (
-          <motion.div key="loader">
-            <Loader setLoading={setLoading} />
-          </motion.div>
-        ) : (
-          <>
-            <HeroSection />
-            <Members />
-            <AboutUs />
-            <Journey />
-            <Partners />
-            <Initiatives />
-            <Discord />
-          </>
-        )}
-      </AnimatePresence>
+      <HeroSection />
+      <Members />
+      <AboutUs />
+      <Journey />
+      <Partners />
+      <Initiatives />
+      <Discord />
     </>
   );
 }
