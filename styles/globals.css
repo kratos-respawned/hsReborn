@@ -2,7 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
-
+html{
+    text-size-adjust: none;
+    scroll-behavior: smooth;
+}
 *::selection {
     background-color: #f81ce5;
     color: white;
