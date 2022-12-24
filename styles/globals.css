@@ -3,7 +3,7 @@
 @tailwind utilities;
  @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 html{
-    text-size-adjust: none;
+    text-size-adjust: 100% !important;
     scroll-behavior: smooth;
 }
 *::selection {
