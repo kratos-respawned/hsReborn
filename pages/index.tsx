@@ -10,7 +10,11 @@ function Home() {
   return (
     <>
       <Head>
-        <title>Home</title>
+        <title>Hackoverflow / Home</title>
+        <meta
+          name="description"
+          content="Become a part of a supportive and inclusive community of students. Our society offers resources, networking opportunities, and a safe space for discussion and collaboration to help students succeed in their academic pursuits. Whether you're looking to make new friends, get involved on campus, or simply want to learn more about your field of study, our society has something for everyone. Come be a part of our community and discover all that we have to offer!"
+        />
       </Head>
       <HeroSection />
       <Members />

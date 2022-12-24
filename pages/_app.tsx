@@ -12,7 +12,9 @@ export default function App({ Component, pageProps }: AppProps) {
     <AnimatePresence>
       <Head>
         <meta name="viewport" content="width=device-width initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="robots" content="index, follow" />
+        {loading && <title>Hello World</title>}
       </Head>
       {loading ? (
         <motion.div>
