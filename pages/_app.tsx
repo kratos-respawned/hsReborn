@@ -27,7 +27,7 @@ export default function App({
         </motion.div>
       ) : (
         <SessionProvider session={session}>
-          <main className="bg-hsBlack overflow-hidden">
+          <main className="bg-hsBlack overflow-clip">
             <main className="max-w-screen-xl mx-auto ">
               <Navbar />
               <Component {...pageProps} />

@@ -2,7 +2,7 @@ import InitCard from "./InitCard";
 function Slider() {
   return (
     <main className="mx-auto relative z-20">
-      <nav className=" sticky top-0 mx-5 border-b py-7  ">
+      <nav className=" sticky -top-4 mx-5 border-b py-7 bg-hsBlack  ">
         <ul className=" grid grid-cols-4 items-center font-generalSans text-center text-white text-xs sm:text-base lg:text-xl">
           <li>
             <a
