@@ -16,22 +16,34 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
     <>
       <div className={classes}>
         <a href="https://twitter.com/Hackoverflow3" title="twitter">
-          <AiFillTwitterSquare color="white" size={heightWidth} />
+          <AiFillTwitterSquare
+            size={heightWidth}
+            className="hover:text-hsPink text-white"
+          />
         </a>
 
         <a href="https://discord.gg/beWGASaKAt" title="discord server link">
-          <FaDiscord color="white" size={heightWidth} />
+          <FaDiscord
+            size={heightWidth}
+            className="hover:text-hsPink text-white"
+          />
         </a>
 
         <a
           href="https://www.instagram.com/hackoverflowsociety/"
           title="instagram"
         >
-          <AiFillInstagram color="white" size={heightWidth} />
+          <AiFillInstagram
+            size={heightWidth}
+            className="hover:text-hsPink text-white"
+          />
         </a>
 
         <a href="https://www.facebook.com/HACKOVERFLOW3" title="facebook">
-          <AiFillFacebook color="white" size={heightWidth} />
+          <AiFillFacebook
+            className="hover:text-hsPink text-white"
+            size={heightWidth}
+          />
         </a>
       </div>
     </>
@@ -89,7 +101,7 @@ export default function Footer({ className = "" }) {
               <Socials heightWidth={29} className="lg:hidden gap-6" />
             </div>
 
-            <p className="hidden lg:block text-slate-100 font-generalSans font-light text-base  leading-5">
+            <p className="hidden lg:block text-slate-100 font-Montserrat font-light text-base  leading-5">
               Hackoverflow Society is a student-driven technical society
               recognized by Chandigarh University. It was officially inducted as
               a society by the Hon&apos;ble Chancellor of Chandigarh University
@@ -100,7 +112,7 @@ export default function Footer({ className = "" }) {
           {/* Grid for navigation */}
           <div className="gap-x-4 grid grid-cols-2 lg:grid-cols-3 gap-1 text-white">
             {/* Events column */}
-            <div className="justify-self-center font-generalSans">
+            <div className="justify-self-center font-Montserrat">
               <h3 className="mb-6 lg:mt-0 text-base font-clashDisplay tracking-wider font-semibold">
                 Events
               </h3>
@@ -136,7 +148,7 @@ export default function Footer({ className = "" }) {
             </div>
 
             {/* Contact info column */}
-            <div className="justify-self-center font-generalSans">
+            <div className="justify-self-center font-Montserrat">
               <h3 className="mb-6 text-base font-clashDisplay tracking-wider font-semibold">
                 Contact Us
               </h3>

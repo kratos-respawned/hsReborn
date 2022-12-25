@@ -40,12 +40,19 @@ html{
     }
 }
 
- 
-button[data-testid="carousel-left-control"]{
-    transform: translateX(-1rem);
-}  button[data-testid="carousel-right-control"]{
-transform: translateX(1rem);
+@layer components{
+button[data-testid="carousel-left-control"] {
+    @apply lg:-translate-x-16 -translate-x-7 
 }
+
+    button[data-testid="carousel-right-control"] {
+        @apply lg:translate-x-16 translate-x-7 
+    }
+} 
+footer a:hover{
+    @apply text-hsPink
+}
+
  button[data-testid="carousel-left-control"]>span,button[data-testid="carousel-right-control"]>span{
     background-color: rgb(36, 24, 51) !important;
     border-radius: 50%;
@@ -60,6 +67,7 @@ button[data-testid="carousel-right-control"]>span>svg{
 }
 button[data-testid="carousel-indicator"].bg-white{
     background-color: rgb(255 0 195) !important;
+
 }
 button[data-testid="carousel-indicator"]{
     background-color: rgb(61, 44, 83) !important;
@@ -113,7 +121,9 @@ button[data-testid="carousel-indicator"]{
         --_p: 100%;
         color: var(--c);
     }
-
+.rgb{
+    @apply transition-shadow duration-300 ease-in-out shadow-transparent
+}
     .rgb:hover {
         animation: rgb 3s linear infinite alternate-reverse;
     }

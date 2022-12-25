@@ -60,9 +60,9 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/team"
               className={`  navlink ${
-                router.pathname === "/"
+                router.pathname === "/team"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
               }`}
@@ -72,9 +72,9 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/about"
               className={`  navlink ${
-                router.pathname === "/"
+                router.pathname === "/about"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
               }`}
@@ -84,9 +84,9 @@ function Navbar() {
           </li>
           <li>
             <Link
-              href="/"
+              href="/contact"
               className={`  navlink ${
-                router.pathname === "/"
+                router.pathname === "/contact"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
               }`}
