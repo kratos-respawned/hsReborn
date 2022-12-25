@@ -9,6 +9,7 @@ html{
 *::selection {
     background-color: #f81ce5;
     color: white;
+    text-shadow: none;
 }
 
 /* ===== Scrollbar CSS ===== */
