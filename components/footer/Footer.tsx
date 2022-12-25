@@ -39,12 +39,12 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
 }
 
 export default function Footer({ className = "" }) {
-  const classes = "p-4 bg-hsBlack lg:p-6  relative " + className;
+  const classes = "p-4 bg-hsBlack lg:p-6  relative z-10" + className;
 
   return (
     <>
       <footer className={classes}>
-        <div className="flex  flex-col lg:justify-between lg:flex-row lg:mx-28 gap-x-3">
+        <div className="flex  flex-col lg:justify-between lg:flex-row  gap-x-3">
           {/* Logo and other content */}
           <div className="basis-1/3 self-center lg:self-auto">
             <div className="flex flex-col lg:flex-row items-center mb-20 lg:mb-4">

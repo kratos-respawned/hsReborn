@@ -9,8 +9,14 @@ export default function Initiatives() {
       <main className="mt-52 md:mt-36 relative  w-full h-full ">
         <section className="z-30 flex flex-col w-full h-full  border-none ">
           <section className="flex-col gap-y-12 h-full bg-transparent z-40 flex justify-start items-center relative">
-            <div className="bg-[#FF1BBB] w-20 h-20 sm:h-40 sm:w-40 blur-3xl  absolute right-0 -top-12 sm:top-0 -z-10" />
-            <div className="bg-[#623FFF]  w-32 h-32 sm:h-72 sm:w-72 blur-3xl sm:blur-[110px]  absolute -left-9  -bottom-24 sm:-bottom-4 -z-10" />
+            <figure
+              aria-hidden
+              className="bg-[#FF1BBB] w-20 h-20 sm:h-40 sm:w-40 blur-3xl  absolute right-0 -top-12 sm:top-0 -z-10"
+            />
+            <figure
+              aria-hidden
+              className="bg-[#623FFF]  w-32 h-32 sm:h-72 sm:w-72 blur-3xl sm:blur-[110px]  absolute -left-9  -bottom-24 sm:-bottom-4 -z-10"
+            />
             <div className="flex flex-col  items-center justify-center max-w-[658px] relative">
               <div className="font-clashDisplay font-medium text-[#fff] text-4xl md:text-6xl">
                 Our Initiatives
@@ -28,7 +34,10 @@ export default function Initiatives() {
                       alt="membership townhall"
                     />
                   </div>
-                  <span className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2  w-32 h-32 md:w-44 md:h-44 blur-[77px] bg-[#8000FF] -z-10" />
+                  <figure
+                    aria-hidden
+                    className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2  w-32 h-32 md:w-44 md:h-44 blur-[77px] bg-[#8000FF] -z-10"
+                  />
                 </div>
                 <h1 className="text-center z-10 py-6 lg:py-0 px-4 font-clashDisplay text-[#00C3FF] text-3xl sm:text-4xl leading-[48px] lg:group-hover:-translate-y-2 lg:duration-300 lg:transition-transform">
                   Membership <br /> Townhall
@@ -48,7 +57,10 @@ export default function Initiatives() {
                       alt="LaDebug"
                     />
                   </div>
-                  <span className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  -z-10 w-20 h-20 md:w-40 md:h-40 blur-3xl bg-[#F55B5B]" />
+                  <figure
+                    aria-hidden
+                    className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2  -z-10 w-20 h-20 md:w-40 md:h-40 blur-3xl bg-[#F55B5B]"
+                  />
                 </div>
               </div>
               <div className="hover:shadow-[#ea00ffcb] hover:shadow-2xl hover:scale-[1.01] hover:-translate-y-1 duration-300 w-full h-full p-2 flex flex-col rounded-3xl  row-start-2 col-span-4 lg:col-span-2 bg-[#191322]">
@@ -62,7 +74,10 @@ export default function Initiatives() {
                       alt="BGC"
                     />
                   </div>
-                  <span className="absolute top-3 right-1/2 translate-x-1/2  -z-40 w-16 h-16 blur-xl   bg-[#EB00FF]" />
+                  <figure
+                    aria-hidden
+                    className="absolute top-3 right-1/2 translate-x-1/2  -z-40 w-16 h-16 blur-xl   bg-[#EB00FF]"
+                  />
                 </div>
                 <h1 className="text-center mb-9 px-4 font-clashDisplay  text-2xl md:text-5xl lg:text-3xl text-[#9E4FFF] ">
                   Bharatiya <br /> Gaming Co.
@@ -79,7 +94,10 @@ export default function Initiatives() {
                       alt="Life of Guru"
                     />
                   </div>
-                  <span className="absolute top-4 right-1/2 translate-x-1/2  -z-40 w-16 h-16 blur-xl  bg-[#FFB800]" />
+                  <figure
+                    aria-hidden
+                    className="absolute top-4 right-1/2 translate-x-1/2  -z-40 w-16 h-16 blur-xl  bg-[#FFB800]"
+                  />
                 </div>
                 <h1 className="text-center mb-9 px-4 font-clashDisplay text-[#E6A866] text-2xl  md:text-5xl lg:text-3xl z-10 ">
                   Life of

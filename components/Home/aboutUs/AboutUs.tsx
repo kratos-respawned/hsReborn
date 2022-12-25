@@ -2,9 +2,15 @@ function AboutUs() {
   return (
     <section className="grid  lg:grid-cols-2 gap-x-10 sm:mt-40 my-10 py-52 md:py-40 items-center px-5 z-10">
       <div className="relative h-full ">
-        <div className="bg-hsBlue w-80 h-80 lg:w-[480px] lg:h-[480px] blur-3xl  rounded-full absolute -top-10 left-0 -z-0 opacity-80 sm:opacity-100">
-          <div className="bg-hsPink w-36 h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100" />
-        </div>
+        <figure
+          aria-hidden
+          className="bg-hsBlue w-80 h-80 lg:w-[480px] lg:h-[480px] blur-3xl  rounded-full absolute -top-10 left-0 -z-0 opacity-80 sm:opacity-100"
+        >
+          <figure
+            aria-hidden
+            className="bg-hsPink w-36 h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100"
+          />
+        </figure>
       </div>
       <div className="space-y-5 lg:max-w-[483px] z-10 flex flex-col">
         <h2 className="font-clashDisplay text-hsWhite text-center text-5xl lg:text-left sm:text-7xl">

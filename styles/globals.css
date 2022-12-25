@@ -35,10 +35,34 @@ html{
 
 @layer utilities{
     .navlink{
-        @apply relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0  hover:after:duration-300 after:bg-white
+        @apply relative after:absolute after:-bottom-1 after:left-0 after:h-[1px] after:w-0  hover:after:duration-300 after:bg-white 
     }
 }
 
+ 
+button[data-testid="carousel-left-control"]{
+    transform: translateX(-1rem);
+}  button[data-testid="carousel-right-control"]{
+transform: translateX(1rem);
+}
+ button[data-testid="carousel-left-control"]>span,button[data-testid="carousel-right-control"]>span{
+    background-color: rgb(36, 24, 51) !important;
+    border-radius: 50%;
+ }
+button[data-testid="carousel-left-control"]>span:hover,
+button[data-testid="carousel-right-control"]>span:hover{
+    background-color: rgb(61, 44, 83) !important;
+}
+button[data-testid="carousel-left-control"]>span>svg,
+button[data-testid="carousel-right-control"]>span>svg{
+    color: rgb(255 0 195);
+}
+button[data-testid="carousel-indicator"].bg-white{
+    background-color: rgb(255 0 195) !important;
+}
+button[data-testid="carousel-indicator"]{
+    background-color: rgb(61, 44, 83) !important;
+}
 @layer utilities{
   
     .inner {

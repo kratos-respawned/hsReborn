@@ -1,6 +1,6 @@
 import "../styles/globals.css";
 import type { AppProps } from "next/app";
-import Navbar from "../components/HomePage/navbar/Navbar";
+import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
@@ -25,6 +25,7 @@ export default function App({ Component, pageProps }: AppProps) {
           <main className="bg-hsBlack overflow-hidden">
             <main className="max-w-screen-xl mx-auto ">
               <Navbar />
+
               <Component {...pageProps} />
               <Footer />
             </main>

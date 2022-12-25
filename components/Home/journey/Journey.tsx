@@ -43,7 +43,10 @@ export default function Journey() {
         <h3 className="text-lg py-4 font-clashDisplay italic text-white leading-[0px]  w-full text-center font-light pt-2">
           How it all started
         </h3>
-        <div className="bg-hsPink w-32 h-32 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px] absolute -top-16 sm:top-0 left-3/4" />
+        <figure
+          aria-hidden
+          className="bg-hsPink w-32 h-32 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px] absolute -top-16 sm:top-0 left-3/4"
+        />
       </div>
 
       <section className="mx-auto relative  z-10 px-7 grid  grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-9 gap-y-12 lg:gap-y-4 place-items-center   h-full pb-20 w-full">
@@ -75,7 +78,10 @@ export default function Journey() {
           );
         })}
       </section>
-      <div className="bg-[#C81D5B] w-36 h-36 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px]  absolute  -bottom-12 sm:-bottom-6 left-0" />
+      <figure
+        aria-hidden
+        className="bg-[#C81D5B] w-36 h-36 sm:w-52 sm:h-52 bg-blend-luminosity blur-[100px]  absolute  -bottom-12 sm:-bottom-6 left-0"
+      />
     </main>
   );
 }

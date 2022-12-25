@@ -27,9 +27,12 @@ function Members() {
             Active Members
           </p>
         </div>
-        <div className="bg-hsBlue blur-3xl  w-3/4 h-96 absolute top-full -translate-y-7 left-1/2 -translate-x-1/2 -z-10 ">
-          <div className="bg-hsPink blur-lg bg-blend-normal w-1/2 h-36 mx-auto translate-y-5" />
-        </div>
+        <figure
+          aria-hidden
+          className="bg-hsBlue blur-3xl  w-3/4 h-96 absolute top-full -translate-y-7 left-1/2 -translate-x-1/2 -z-10 "
+        >
+          <figure className="bg-hsPink blur-lg bg-blend-normal w-1/2 h-36 mx-auto translate-y-5" />
+        </figure>
       </section>
     </section>
   );
