@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import kitty from "./lub.gif";
 import {
   AiFillTwitterSquare,
   AiFillFacebook,
@@ -174,7 +175,7 @@ export default function Footer() {
                     rel="noreferrer"
                     className="hover:underline"
                   >
-                    Chandigarh University, <br />
+                    Chandigarh University , <br />
                     Gharuan, Mohali, <br />
                     Punjab, India
                   </a>
@@ -212,6 +213,21 @@ export default function Footer() {
               Chandigarh University, Gharuan, Mohali, Punjab, India
             </a>
           </h4>
+          <span className="font-Montserrat">
+            Made with
+            <span className="ml-2 relative group cursor-pointer">
+              <a
+                href="https://www.youtube.com/watch?v=xvFZjo5PgG0"
+                target="_blank"
+                rel="noreferrer"
+              >
+                ❤️
+              </a>
+              <span className="absolute bottom-full left-0 -translate-x-1/2 w-32 h-32 opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none ">
+                <Image src={kitty} width={200} height={200} alt="kitty" />
+              </span>
+            </span>
+          </span>
         </div>
       </footer>
     </>

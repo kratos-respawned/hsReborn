@@ -13,12 +13,13 @@ export default function App({
 }: AppProps) {
   const [loading, setLoading] = useState(true);
   return (
-    <>
+    <AnimatePresence>
       <Head>
-        <meta name="viewport" content="width=device-width initial-scale=1.0" />
-        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta name="description" content="Page is loading please wait" />
         <meta name="robots" content="index, follow" />
-        me
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
         {loading && <title>Hello World</title>}
       </Head>
       {loading ? (
@@ -36,6 +37,6 @@ export default function App({
           </main>
         </SessionProvider>
       )}
-    </>
+    </AnimatePresence>
   );
 }

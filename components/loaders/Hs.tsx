@@ -5,9 +5,9 @@ function HsLoaderImage({ setLoading }: Props) {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.03,
+        staggerChildren: 0.08,
       },
-      hide: {
+      exit: {
         opacity: 0,
       },
     },
@@ -44,7 +44,7 @@ function HsLoaderImage({ setLoading }: Props) {
         xmlnsXlink="http://www.w3.org/1999/xlink"
         variants={container}
         initial="hidden"
-        exit="hide"
+        exit="exit"
         animate="show"
       >
         <motion.path

@@ -7,17 +7,14 @@ function Contact() {
   const [message, setMessage] = useState("");
   const { data: session } = useSession();
   useEffect(() => {
+    console.log(session);
     if (session) {
       //   @ts-ignore
       setName(session.user.name);
       //   @ts-ignore
       setMail(session.user.email);
     } else {
-      // signIn("", {
-      //   callbackUrl: process.env.NEXTAUTH_URL
-      //     ? process.env.NEXTAUTH_URL
-      //     : "http://localhost:3000",
-      // });
+      //
     }
   }, [session]);
   return (
@@ -35,53 +32,72 @@ function Contact() {
         Contact Us
       </h1>
       <section className="flex justify-between gap-7">
-        <form
-          className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
-          onSubmit={(e) => {
-            e.preventDefault();
-          }}
-        >
-          <input
-            value={name}
-            alt="enter name"
-            name="name"
-            type="text"
-            placeholder="Enter your Name"
-            className="bg-transparent tracking-wider border-b  px-3 pb-2 font-generalSans text-lg  text-hsWhite border-b-white focus:outline-none focus:border-b-white"
-            required
-            readOnly
-          />
-
-          <input
-            value={email}
-            alt="email field"
-            name="email"
-            type="email"
-            placeholder="Enter your Email"
-            className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite focus:outline-none focus:border-b-white"
-            required
-            readOnly
-          />
-
-          <textarea
-            value={message}
-            onChange={(e) => setMessage(e.target.value)}
-            name="message"
-            placeholder="Message"
-            className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite  focus:outline-none focus:border-b-white"
-            required
-            autoComplete="false"
-            rows={3}
-          />
-
-          <button
-            type="submit"
-            className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
+        {!session ? (
+          <div className="flex flex-col items-center justify-center gap-y-12">
+            <h2 className="font-generalSans font-medium text-2xl text-hsWhite">
+              You must be logged in to send message
+            </h2>
+            <button
+              onClick={() => {
+                signIn("google", {
+                  callbackUrl: process.env.NEXTAUTH_URL
+                    ? process.env.NEXTAUTH_URL
+                    : "http://localhost:3000/contact",
+                });
+              }}
+              className=" border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
+            >
+              Sign In
+            </button>
+          </div>
+        ) : (
+          <form
+            className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
+            onSubmit={(e) => {
+              e.preventDefault();
+            }}
           >
-            Send Message
-          </button>
-        </form>
+            <input
+              value={name}
+              alt="enter name"
+              name="name"
+              type="text"
+              placeholder="Enter your Name"
+              className="bg-transparent tracking-wider border-b  px-3 pb-2 font-generalSans text-lg  text-hsWhite border-b-white focus:outline-none focus:border-b-white"
+              required
+              readOnly
+            />
 
+            <input
+              value={email}
+              alt="email field"
+              name="email"
+              type="email"
+              placeholder="Enter your Email"
+              className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite focus:outline-none focus:border-b-white"
+              required
+              readOnly
+            />
+
+            <textarea
+              value={message}
+              onChange={(e) => setMessage(e.target.value)}
+              name="message"
+              placeholder="Message"
+              className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite  focus:outline-none focus:border-b-white"
+              required
+              autoComplete="false"
+              rows={3}
+            />
+
+            <button
+              type="submit"
+              className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
+            >
+              Send Message
+            </button>
+          </form>
+        )}
         <section className="justify-self-end text-hsWhite font-generalSans hidden sm:block">
           <div className="mb-4">
             <h3 className="mb-2 text-sm font-bold uppercase opacity-50">
