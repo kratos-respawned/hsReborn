@@ -13,15 +13,15 @@ function Contact() {
       //   @ts-ignore
       setMail(session.user.email);
     } else {
-      signIn("", {
-        callbackUrl: process.env.NEXTAUTH_URL
-          ? process.env.NEXTAUTH_URL
-          : "http://localhost:3000",
-      });
+      // signIn("", {
+      //   callbackUrl: process.env.NEXTAUTH_URL
+      //     ? process.env.NEXTAUTH_URL
+      //     : "http://localhost:3000",
+      // });
     }
   }, [session]);
   return (
-    <main className="my-14 space-y-10 px-10 relative z-10">
+    <main className="mt-14 mb-24 space-y-10 px-10 relative z-10">
       <figure
         aria-hidden
         className="rounded-full bg-hsBlue blur-3xl absolute -top-10 -left-10   w-52 h-52 -z-10"
@@ -31,12 +31,12 @@ function Contact() {
         </figure>
       </figure>
 
-      <h1 className="font-clashDisplay font-medium text-7xl text-white">
+      <h1 className="font-clashDisplay font-medium text-5xl sm:text-7xl text-white">
         Contact Us
       </h1>
-      <section className="flex justify-between">
+      <section className="flex justify-between gap-7">
         <form
-          className="flex flex-col gap-9 w-96 md:w-[500px] mt-5"
+          className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
           onSubmit={(e) => {
             e.preventDefault();
           }}
@@ -76,13 +76,13 @@ function Contact() {
 
           <button
             type="submit"
-            className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink hover:font-bold  font-generalSans text-hsWhite rounded-3xl px-10 py-2"
+            className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
           >
             Send Message
           </button>
         </form>
 
-        <section className="justify-self-end text-hsWhite font-generalSans ">
+        <section className="justify-self-end text-hsWhite font-generalSans hidden sm:block">
           <div className="mb-4">
             <h3 className="mb-2 text-sm font-bold uppercase opacity-50">
               Contact Details

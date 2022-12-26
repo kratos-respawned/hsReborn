@@ -5,6 +5,7 @@ import HeroSection from "../components/Home/heroSection/HeroSection";
 import Initiatives from "../components/Home/initiatives/Initiatives";
 import Journey from "../components/Home/journey/Journey";
 import Members from "../components/Home/members/Members";
+// import Members from "../components/Home/members/Members.jsx";
 import Partners from "../components/Home/partners/Partners";
 function Home() {
   return (
@@ -17,11 +18,12 @@ function Home() {
         />
       </Head>
       <HeroSection />
+      {/* <Members /> */}
       <Members />
       <AboutUs />
       <Journey />
-      <Partners />
       <Initiatives />
+      <Partners />
       <Discord />
     </>
   );

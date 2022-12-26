@@ -50,12 +50,16 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
   );
 }
 
-export default function Footer({ className = "" }) {
-  const classes = "p-4 bg-hsBlack lg:p-6  relative z-10" + className;
-
+export default function Footer() {
   return (
     <>
-      <footer className={classes}>
+      <footer className="p-4 bg-hsBlack lg:p-6  relative z-10 overflow-clip">
+        <figure
+          aria-hidden
+          className="bg-hsBlue blur-3xl  w-3/4 h-96 absolute bottom-full -translate-y-7 left-1/2 -translate-x-1/2 -z-10 "
+        >
+          <figure className="bg-hsPink blur-lg bg-blend-normal w-1/2 h-36 mx-auto absolute left-1/2 -translate-x-1/2 bottom-0 " />
+        </figure>
         <div className="flex  flex-col lg:justify-between lg:flex-row  gap-x-3">
           {/* Logo and other content */}
           <div className="basis-1/3 self-center lg:self-auto">
@@ -82,7 +86,7 @@ export default function Footer({ className = "" }) {
 
               <div className="text-white text-center mb-7 lg:mb-0 lg:text-left  whitespace-nowrap">
                 {/* Footer title */}
-                <span className="self-center text-xl font-bold font-clashDisplay">
+                <span className="self-center text-2xl font-semibold font-clashDisplay">
                   <span className="hidden lg:inline tracking-wider">
                     Hackoverflow
                   </span>
@@ -92,8 +96,8 @@ export default function Footer({ className = "" }) {
                 <br />
 
                 {/* sub-title */}
-                <span className="font-clashDisplay">
-                  <span className="hidden lg:inline text-xl">Society</span>
+                <span className="font-clashDisplay font-normal">
+                  <span className="hidden lg:inline text-2xl">Society</span>
                   <span className="lg:hidden">Be Part of The Change</span>
                 </span>
               </div>

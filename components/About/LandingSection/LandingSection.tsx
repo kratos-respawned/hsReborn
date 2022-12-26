@@ -1,7 +1,4 @@
-type Props = {
-  title: string;
-};
-function HeroSection({ title }: Props) {
+function LandingSection() {
   return (
     <div className="-mt-4 md:mt-0  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
       <figure
@@ -15,13 +12,12 @@ function HeroSection({ title }: Props) {
         />
       </figure>
 
-      <h1 className="font-clashDisplay text-center font-medium text-6xl md:text-9xl  text-white">
-        {title.split(" ")[0]}
-        <br />
-        {title.split(" ")[1]}
+      <h1 className="max-w-6xl  font-clashDisplay font-light text-center  text-3xl sm:text-6xl  text-white">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, vel
+        euismod ornare vel vitae convallis placerat.
       </h1>
     </div>
   );
 }
 
-export default HeroSection;
+export default LandingSection;
