@@ -5,11 +5,7 @@
 html{
     text-size-adjust: 100% !important;
     scroll-behavior: smooth;
-    overscroll-behavior-y: none;
-}
-body{
-    overscroll-behavior-y: none;
-
+ 
 }
 *::selection {
     background-color: #f81ce5;
