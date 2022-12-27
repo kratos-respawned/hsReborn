@@ -3,7 +3,7 @@ import type { AppProps } from "next/app";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import { useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { AnimatePresence } from "framer-motion";
 import Loader from "../components/loaders/Loader";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
@@ -19,13 +19,11 @@ export default function App({
         <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="description" content="Page is loading please wait" />
         <meta name="robots" content="index, follow" />
-        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
         {loading && <title>Hello World</title>}
       </Head>
       {loading ? (
-        <motion.div>
-          <Loader setLoading={setLoading} />
-        </motion.div>
+        <Loader setLoading={setLoading} />
       ) : (
         <SessionProvider session={session}>
           <main className="bg-hsBlack overflow-clip">
