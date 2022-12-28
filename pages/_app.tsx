@@ -16,10 +16,24 @@ export default function App({
     <AnimatePresence>
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+        <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
         <meta name="description" content="Page is loading please wait" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
+        <link
+          rel="preload"
+          href="/fonts/generalSans/GeneralSans-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/fonts/ClashDisplay/ClashDisplay-Variable.woff2"
+          as="font"
+          type="font/woff2"
+          crossOrigin="anonymous"
+        />
         {loading && <title>Hello World</title>}
       </Head>
       {loading ? (

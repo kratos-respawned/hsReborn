@@ -126,18 +126,18 @@ button[data-testid="carousel-indicator"]{
 
 @font-face {
     font-family: 'ClashDisplay-Medium';
-    src: url('../fonts/ClashDisplay/ClashDisplay-Variable.woff2') format('woff2'),
-        url('../fonts/ClashDisplay/ClashDisplay-Variable.woff') format('woff'),
-        url('../fonts/ClashDisplay/ClashDisplay-Variable.ttf') format('truetype');
+    src: url('../public/fonts/ClashDisplay/ClashDisplay-Variable.woff2') format('woff2') ,
+        url('../public/fonts/ClashDisplay/ClashDisplay-Variable.woff') format('woff'),
+        url('../public/fonts/ClashDisplay/ClashDisplay-Variable.ttf') format('truetype');
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;
 }
 @font-face {
     font-family: 'GeneralSans-Medium';
-    src: url('../fonts/generalSans/GeneralSans-Variable.woff2') format('woff2'),
-        url('../fonts/generalSans/GeneralSans-Variable.woff') format('woff'),
-        url('../fonts/generalSans/GeneralSans-Variable.ttf') format('truetype');
+    src: url('../public/fonts/generalSans/GeneralSans-Variable.woff2') format('woff2'),
+        url('../public/fonts/generalSans/GeneralSans-Variable.woff') format('woff'),
+        url('../public/fonts/generalSans/GeneralSans-Variable.ttf') format('truetype');
     font-weight: 200 700;
     font-display: swap;
     font-style: normal;

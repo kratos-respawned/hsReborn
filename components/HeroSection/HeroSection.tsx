@@ -1,7 +1,18 @@
+// import { useTime, useTransform, MotionValue, motion } from "framer-motion";
 type Props = {
   title: string;
 };
 function HeroSection({ title }: Props) {
+  // const t: MotionValue = useTime();
+  // const y = useTransform(t, (value) => Math.cos(value / 200) * 10);
+  // const scale = useTransform(
+  //   t,
+  //   (value) => Math.abs(Math.sin(value / 1450)) * 0.2 + 0.8
+  // );
+  // const levitate = useTransform(
+  //   t,
+  //   (value) => Math.abs(Math.sin(value / 1500)) * 0.2
+  // );
   return (
     <div className="-mt-4 md:mt-0  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
       <figure
@@ -10,6 +21,7 @@ function HeroSection({ title }: Props) {
             transform -translate-x-1/2 -translate-y-1/2  -z-10"
       >
         <figure
+          // style={{ scale }}
           aria-hidden
           className="bg-hsPink blur-3xl w-24 md:w-32 h-full aspect-square rounded-full"
         />
