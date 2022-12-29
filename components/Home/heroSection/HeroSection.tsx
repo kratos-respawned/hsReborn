@@ -16,14 +16,14 @@ function HeroSection() {
         <h2 className="font-clashDisplay font-medium text-white  text-3xl md:text-5xl lg:text-6xl text-center lg:text-start ">
           Fastest growing student society in North India
         </h2>
-        <p className="font-montserrat text-hsWhite leading-7 text-center lg:text-justify text-sm md:text-base">
+        <p className="font-Montserrat text-hsWhite leading-7 text-center lg:text-justify text-sm md:text-base">
           Created by the students for the students. Pioneered with the objective
           of integrating passionate and driven tech and non-tech enthusiasts
           across the world.
         </p>
         <button
           type="button"
-          className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue text-hsWhite font-montserrat text-sm md:text-base"
+          className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue hover:bg-hsPink transition-colors duration-200 hover:text-hsBlack text-hsWhite font-Montserrat text-sm md:text-base"
         >
           Learn More
         </button>

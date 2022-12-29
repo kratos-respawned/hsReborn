@@ -7,13 +7,13 @@ type Props = {
 };
 function ImageCard({ image, name, designation }: Props) {
   return (
-    <div className="mx-auto  relative max-w-[400px] max-h-[484px] overflow-clip rounded-b-2xl rounded-t-md hover:shadow-2xl hover:shadow-fuchsia-800 hover:-translate-y-1 duration-300">
+    <div className="mx-auto  relative max-w-[400px] max-h-[484px] overflow-clip rounded-b-2xl rounded-t-md  group">
       <Image
         src={image}
         width={400}
         height={484}
         alt={name}
-        className="rounded-b-2xl rounded-t-md scale-105 "
+        className="rounded-b-2xl rounded-t-md scale-105 group-hover:scale-110 transition-transform"
       />
       <div className="rounded-2xl rounded-t-md absolute bottom-0 w-full  bg-gradient-to-t from-hsBlack to-transparent bg-opacity-80  flex flex-col justify-center px-6 py-5">
         <h3 className="font-clashDisplay font-medium text-2xl text-hsWhite ">
