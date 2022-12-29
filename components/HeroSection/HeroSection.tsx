@@ -17,17 +17,17 @@ function HeroSection({ title }: Props) {
     <div className="-mt-4 md:mt-0  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
       <figure
         aria-hidden
-        className="bg-hsBlue  w-52 h-64 md:w-96 md:h-80  blur-3xl absolute top-1/2 left-1/2
+        className="bg-hsBlue  w-60 h-64 md:w-96 md:h-80  blur-2xl md:blur-3xl absolute top-1/2 left-1/2
             transform -translate-x-1/2 -translate-y-1/2  -z-10"
       >
         <figure
           // style={{ scale }}
           aria-hidden
-          className="bg-hsPink blur-3xl w-24 md:w-32 h-full aspect-square rounded-full"
+          className="bg-hsPink blur-2xl md:blur-3xl w-20 md:w-32 h-full aspect-square rounded-full"
         />
       </figure>
 
-      <h1 className="font-clashDisplay text-center font-medium text-6xl md:text-9xl  text-white">
+      <h1 className="font-clashDisplay text-center font-medium text-6xl sm:text-8xl md:text-9xl  text-white">
         {title.split(" ")[0]}
         <br />
         {title.split(" ")[1]}

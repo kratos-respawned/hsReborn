@@ -16,9 +16,11 @@ html{
 /* ===== Scrollbar CSS ===== */
 /* Firefox */
 * {
+    -webkit-tap-highlight-color: transparent;
     scrollbar-width: auto;
     scrollbar-color: #ff00c3 #140F1B;
 }
+  
 
 /* Chrome, Edge, and Safari */
 *::-webkit-scrollbar {
