@@ -26,7 +26,7 @@ function Navbar() {
         <ul
           className={`z-50 lg:z-0 tracking-wide absolute bg-[#140f1b92] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${
             navVisibility ? "-translate-x-0 " : "translate-x-full"
-          } transition-transform h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
+          } transition-transform min-h-[400px] lg:min-h-fit h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
         >
           <li>
             <Link

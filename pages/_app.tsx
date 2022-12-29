@@ -16,7 +16,9 @@ export default function App({
     // <>
     //   <Loader setLoading={setLoading} />
     // </>
-    <AnimatePresence>
+
+    <>
+      {" "}
       <Head>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta httpEquiv="Content-Type" content="text/html;charset=UTF-8" />
@@ -39,19 +41,21 @@ export default function App({
         />
         {loading && <title>Hello World</title>}
       </Head>
-      {loading ? (
-        <Loader setLoading={setLoading} />
-      ) : (
-        <SessionProvider session={session}>
-          <main className="bg-hsBlack overflow-clip">
-            <main className="max-w-screen-xl mx-auto ">
-              <Navbar />
-              <Component {...pageProps} />
-              <Footer />
+      <AnimatePresence>
+        {loading ? (
+          <Loader setLoading={setLoading} />
+        ) : (
+          <SessionProvider session={session}>
+            <main className="bg-hsBlack overflow-clip">
+              <main className="max-w-screen-xl mx-auto ">
+                <Navbar />
+                <Component {...pageProps} />
+                <Footer />
+              </main>
             </main>
-          </main>
-        </SessionProvider>
-      )}
-    </AnimatePresence>
+          </SessionProvider>
+        )}
+      </AnimatePresence>
+    </>
   );
 }

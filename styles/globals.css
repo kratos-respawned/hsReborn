@@ -8,7 +8,7 @@ html{
  
 }
 *::selection {
-    background-color: #f81ce5;
+    background-color: rgb(255 0 195);
     color: white;
     text-shadow: none;
 }
@@ -96,7 +96,7 @@ button[data-testid="carousel-left-control"] {
     }
 } 
 footer a:hover{
-    @apply text-hsPink
+    @apply text-hsPink 
 }
 
  button[data-testid="carousel-left-control"]>span,button[data-testid="carousel-right-control"]>span{

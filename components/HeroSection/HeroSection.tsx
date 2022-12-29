@@ -14,7 +14,7 @@ function HeroSection({ title }: Props) {
   //   (value) => Math.abs(Math.sin(value / 1500)) * 0.2
   // );
   return (
-    <div className="-mt-4 md:mt-0  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
+    <div className="-mt-4 md:mt-0 md:mb-4  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
       <figure
         aria-hidden
         className="bg-hsBlue  w-60 h-64 md:w-96 md:h-80  blur-2xl md:blur-3xl absolute top-1/2 left-1/2

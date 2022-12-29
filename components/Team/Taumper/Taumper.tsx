@@ -11,7 +11,6 @@ export type Props = {
   designation2: string;
 };
 function Taumper(props: Props) {
-  console.log(props);
   return (
     <div className="px-7">
       <section className="border-t py-24 relative isolate ">

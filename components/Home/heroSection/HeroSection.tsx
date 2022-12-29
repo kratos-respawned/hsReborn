@@ -4,11 +4,42 @@ import { useEffect, useRef } from "react";
 function HeroSection() {
   let height = useRef(415);
   let width = useRef(384);
+  const image = useRef<HTMLImageElement>(null);
+  const hover = () => {
+    const imgHeight = image.current?.clientHeight;
+    const imgWidth = image.current?.clientWidth;
+    image.current?.addEventListener("mousemove", handleMove);
+    function handleMove(e: MouseEvent) {
+      const xVal: number = e.offsetX;
+      const yVal: number = e.offsetY;
+      if (!imgHeight || !imgWidth) return;
+      const yRotation: number = 10 * ((xVal - imgWidth / 2) / imgWidth);
+
+      const xRotation: number = -10 * ((yVal - imgHeight / 2) / imgHeight);
+
+      const string =
+        "perspective(500px) scale(1) rotateX(" +
+        xRotation +
+        "deg) rotateY(" +
+        yRotation +
+        "deg)";
+
+      if (image.current) image.current.style.transform = string;
+    }
+
+    image.current?.addEventListener("mouseout", function () {
+      if (image.current)
+        image.current.style.transform =
+          "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    });
+  };
+
   useEffect(() => {
     if (window?.innerWidth < 1024) {
       height.current = 309.6;
       width.current = 288;
     }
+    hover();
   }, []);
   return (
     <main className="flex flex-col-reverse lg:flex-row  items-center justify-between lg:gap-2   lg:mt-10 pb-24 px-5 ">
@@ -31,6 +62,7 @@ function HeroSection() {
       <section className="py-3 lg:py-6 flex-grow-0 lg:flex-grow relative z-10 ">
         <motion.div layout layoutId="loader">
           <Image
+            ref={image}
             src="/hsLogo.png"
             alt="hero section Logo "
             className="mx-auto  z-10 relative "

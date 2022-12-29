@@ -7,18 +7,17 @@ function Contact() {
   const [message, setMessage] = useState("");
   const { data: session } = useSession();
   useEffect(() => {
-    console.log(session);
     if (session) {
-      //   @ts-ignore
-      setName(session.user.name);
-      //   @ts-ignore
-      setMail(session.user.email);
+      if (session.user?.name && session.user?.email) {
+        setName(session.user.name);
+        setMail(session.user.email);
+      }
     } else {
       //
     }
   }, [session]);
   return (
-    <main className="mt-14 mb-24 space-y-10 px-10 relative z-10">
+    <main className="mt-14 mb-28 space-y-10 px-10 relative z-10">
       <figure
         aria-hidden
         className="rounded-full bg-hsBlue blur-3xl absolute -top-10 -left-10   w-52 h-52 -z-10"

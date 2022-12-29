@@ -8,7 +8,10 @@ function HsLoaderImage({ setLoading }: Props) {
         staggerChildren: 0.08,
       },
       exit: {
-        opacity: 0,
+        x: 100,
+        transition: {
+          duration: 2,
+        },
       },
     },
   };
