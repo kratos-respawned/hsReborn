@@ -39,7 +39,7 @@ export default function Initiatives() {
                     className="absolute top-1/2 -translate-y-1/2 left-1/2 -translate-x-1/2  w-32 h-32 md:w-44 md:h-44 blur-[77px] bg-[#8000FF] -z-10"
                   />
                 </div>
-                <h1 className="text-center z-10 py-6 lg:py-0 px-4 font-clashDisplay  text-[#00C3FF] text-3xl sm:text-4xl leading-[48px] lg:group-hover:-translate-y-2 lg:duration-300 lg:transition-transform">
+                <h1 className="text-center z-10 py-6 lg:py-0 px-4 font-clashDisplay text-[#00C3FF] text-3xl sm:text-4xl leading-[48px] lg:group-hover:-translate-y-2 lg:duration-300 lg:transition-transform">
                   Membership <br /> Townhall
                 </h1>
               </div>
