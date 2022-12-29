@@ -19,13 +19,13 @@ function Taumper(props: Props) {
             <figure
               aria-hidden
               className="absolute bg-hsBlue w-32 h-32 md:w-52 md:h-52 
-        left-0 -translate-x-1/2 bottom-1/2 -translate-y-1/2
+        left-0 -translate-x-1/2 top-0 sm:bottom-1/2 md:-translate-y-1/2
         blur-[100px] -z-10"
             />
             <figure
               aria-hidden
               className="absolute bg-hsPink w-44 h-44 rounded-full 
-        right-0 translate-x-1/2 bottom-1/4 translate-y-1/2
+        right-0 translate-x-1/2 sm:bottom-1/4 sm:translate-y-1/2 bottom-0
               blur-3xl -z-10"
             />
           </>
