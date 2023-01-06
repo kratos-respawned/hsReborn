@@ -1,4 +1,5 @@
 import Head from "next/head";
+
 import AboutCu from "../components/About/About/AboutCu";
 import AboutHs from "../components/About/About/AboutHs";
 import LandingSection from "../components/About/LandingSection/LandingSection";

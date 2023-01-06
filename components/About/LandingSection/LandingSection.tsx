@@ -1,4 +1,8 @@
+import { motion, useScroll, useTransform } from "framer-motion";
+
 function LandingSection() {
+  const { scrollYProgress } = useScroll();
+  const y = useTransform(scrollYProgress, [0, 1], [0, -500]);
   return (
     <div className="-mt-4 md:mt-0  grid place-items-center relative h-[80vh] max-h-[750px] w-11/12 mx-auto z-10">
       <figure
@@ -11,10 +15,15 @@ function LandingSection() {
           className="bg-hsPink blur-2xl md:blur-3xl w-20 md:w-32 h-full aspect-square rounded-full"
         />
       </figure>
-      <h1 className="max-w-6xl  font-clashDisplay font-light text-center  text-3xl sm:text-5xl lg:text-6xl  text-white">
+      <motion.h1
+        style={{
+          translateY: y,
+        }}
+        className="max-w-6xl  font-clashDisplay font-light text-center  text-3xl sm:text-5xl lg:text-6xl  text-white"
+      >
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, vel
         euismod ornare vel vitae convallis placerat.
-      </h1>
+      </motion.h1>
     </div>
   );
 }
