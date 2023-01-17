@@ -54,7 +54,7 @@ function Socials({ heightWidth = 22, className = "", override = false }) {
 export default function Footer() {
   return (
     <>
-      <footer className="p-4 bg-hsBlack lg:p-6  relative z-10 overflow-clip">
+      <footer className="px-4 pt-14 pb-4 bg-hsBlack lg:px-6  relative z-10 overflow-clip">
         <figure
           aria-hidden
           className="bg-hsBlue blur-3xl  w-3/4 h-96 absolute bottom-full -translate-y-7 left-1/2 -translate-x-1/2 -z-10 "

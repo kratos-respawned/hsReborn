@@ -33,10 +33,7 @@ function Discord() {
     }
   }, []);
   return (
-    <section
-      ref={circleRef}
-      className=" mt-6  mb-28 overflow-hidden  relative z-40"
-    >
+    <section ref={circleRef} className=" mt-6   overflow-hidden  relative z-40">
       <h2 className=" translate-y-10 sm:translate-y-20 text-center font-clashDisplay text-white  text-3xl sm:text-5xl">
         Join our Discord
       </h2>
