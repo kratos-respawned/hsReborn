@@ -3,7 +3,7 @@ function Slider() {
   return (
     <main className="mx-auto relative z-40">
       <nav className=" sticky -top-4 mx-5 border-b py-7 bg-hsBlack  ">
-        <ul className=" grid grid-cols-4 items-center font-generalSans text-center text-white font-normal sm:text-base lg:text-xl">
+        <ul className=" grid grid-cols-4 items-center font-generalSans text-center text-white font-normal text-xs sm:text-base lg:text-xl">
           <li>
             <a
               className="active:opacity-100 opacity-50 active:font-bold "

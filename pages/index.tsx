@@ -6,6 +6,7 @@ import Initiatives from "../components/Home/initiatives/Initiatives";
 import Journey from "../components/Home/journey/Journey";
 import Members from "../components/Home/members/Members";
 import Partners from "../components/Home/partners/Partners";
+import Disck from "../components/Home/discord/Disck";
 function Home() {
   return (
     <>
@@ -23,6 +24,7 @@ function Home() {
       <Initiatives />
       <Partners />
       <Discord />
+      <Disck />
     </>
   );
 }

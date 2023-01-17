@@ -1,9 +1,9 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect, useRef } from "react";
+import { useEffect, useRef, useState } from "react";
 function HeroSection() {
-  let height = useRef(415);
-  let width = useRef(384);
+  // const [width, setWidth] = useState(384);
+  // const [height, setHeight] = useState(415);
   const image = useRef<HTMLImageElement>(null);
   const hover = () => {
     const imgHeight = image.current?.clientHeight;
@@ -35,14 +35,16 @@ function HeroSection() {
   };
 
   useEffect(() => {
-    if (window?.innerWidth < 1024) {
-      height.current = 309.6;
-      width.current = 288;
+    let mounted = true;
+    if (mounted) {
+      hover();
     }
-    hover();
+    return () => {
+      mounted = false;
+    };
   }, []);
   return (
-    <main className="flex flex-col-reverse lg:flex-row  items-center justify-between lg:gap-2   lg:mt-10 pb-24 px-5 ">
+    <main className="flex flex-col-reverse lg:flex-row  items-center justify-between lg:gap-5   lg:mt-10 pb-24 px-5 ">
       <section className="max-w-[580px] lg:max-w-[575px] space-y-5 lg:space-y-6  z-30 flex flex-col flex-grow lg:flex-grow-0 ">
         <h2 className="font-clashDisplay font-medium text-white  text-3xl md:text-5xl lg:text-6xl text-center lg:text-start ">
           Fastest growing student society in North India
@@ -65,12 +67,11 @@ function HeroSection() {
             ref={image}
             src="/hsLogo.png"
             alt="hero section Logo "
-            className="mx-auto  z-10 relative "
-            width={width.current}
-            height={height.current}
+            className="mx-auto lg:w-96 lg:h-[415px] sm:w-80 w-64 aspect-[388/419]  z-10 relative "
+            width={384}
+            height={415}
             priority
             loading="eager"
-            unoptimized
           />
         </motion.div>
 

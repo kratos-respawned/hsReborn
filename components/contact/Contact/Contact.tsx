@@ -32,8 +32,8 @@ function Contact() {
       </h1>
       <section className="flex justify-between gap-7">
         {!session ? (
-          <div className="flex flex-col items-center justify-center gap-y-12">
-            <h2 className="font-generalSans font-medium text-2xl text-hsWhite">
+          <div className="md:px-7  flex flex-col items-baseline justify-center gap-y-12">
+            <h2 className="max-w-sm font-generalSans font-medium text-2xl text-hsWhite">
               You must be logged in to send message
             </h2>
             <button
