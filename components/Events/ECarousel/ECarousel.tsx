@@ -1,13 +1,6 @@
 import { Carousel } from "flowbite-react";
 import Image from "next/image";
 
-interface Props {
-  thumbnailUrl?: string;
-  title: string;
-  description?: string;
-  dateString: string;
-  url?: string;
-}
 function ECarousel() {
   return (
     <main className="w-11/12 mx-auto">
@@ -36,7 +29,19 @@ function ECarousel() {
 }
 export default ECarousel;
 
-function Card({ thumbnailUrl, title, description, dateString, url }: Props) {
+function Card({
+  thumbnailUrl,
+  title,
+  description,
+  dateString,
+  url,
+}: {
+  thumbnailUrl?: string;
+  title: string;
+  description?: string;
+  dateString: string;
+  url?: string;
+}) {
   if (description === undefined) {
     description =
       "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Gravida tempus faucibus eget aliquet gravida curabitur blandit vitae cursus. Ut odio adipiscing vestibulum nec, ridiculus adipiscing pellentesque ridiculus.";
