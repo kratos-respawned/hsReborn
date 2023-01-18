@@ -9,9 +9,8 @@ import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
 export default function App({
   Component,
-  pageProps,
-}: // pageProps: { session, ...pageProps },
-AppProps) {
+  pageProps: { session, ...pageProps },
+}: AppProps) {
   const [loading, setLoading] = useState(true);
   return (
     <>
@@ -37,21 +36,21 @@ AppProps) {
         />
         {loading && <title>Hello World</title>}
       </Head>
-      {/* <AnimatePresence>
+      <AnimatePresence>
         {loading ? (
           <Loader setLoading={setLoading} />
-        ) : ( */}
-      {/* <SessionProvider session={session}> */}
-      <main className="bg-hsBlack overflow-clip">
-        <main className="max-w-screen-xl mx-auto ">
-          <Navbar />
-          <Component {...pageProps} />
-          <Footer />
-        </main>
-      </main>
-      {/* </SessionProvider> */}
-      {/* )}
-      </AnimatePresence> */}
+        ) : (
+          <SessionProvider session={session}>
+            <main className="bg-hsBlack overflow-clip">
+              <main className="max-w-screen-xl mx-auto ">
+                <Navbar />
+                <Component {...pageProps} />
+                <Footer />
+              </main>
+            </main>
+          </SessionProvider>
+        )}
+      </AnimatePresence>
     </>
   );
 }
