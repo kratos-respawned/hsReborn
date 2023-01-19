@@ -1,14 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import { GiHamburgerMenu } from "react-icons/gi";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useRouter } from "next/router";
 import { useState } from "react";
+import { useLoader } from "../../store/store";
 function Navbar() {
   const router = useRouter();
+  const loading = useLoader((state) => state.loading);
   const [navVisibility, setNavVisibility] = useState(false);
   return (
-    <header>
+    <header className={`${loading ? " hidden " : " block "}`}>
       <nav className="relative flex items-center justify-between py-7 px-5 z-50">
         <div className="flex space-x-4 items-center sm:scale-100 scale-90 ">
           <Link href="/">
