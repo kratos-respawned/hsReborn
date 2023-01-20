@@ -129,33 +129,21 @@ html {
     @apply lg:-translate-x-16 -translate-x-7;
   }
 
-  button[data-testid="carousel-right-control"] {
+  /* button[data-testid="carousel-right-control"] {
     @apply lg:translate-x-16 translate-x-7;
+  } */
+  footer a:hover {
+    @apply text-hsPink;
   }
 }
-footer a:hover {
-  @apply text-hsPink;
+
+.carousel .dot {
+  background-color: #3d2c53 !important;
+}
+.carousel .dot.selected {
+  background-color: #ff00c3 !important;
 }
 
-button[data-testid="carousel-left-control"] > span,
-button[data-testid="carousel-right-control"] > span {
-  background-color: rgb(36, 24, 51) !important;
-  border-radius: 50%;
-}
-button[data-testid="carousel-left-control"] > span:hover,
-button[data-testid="carousel-right-control"] > span:hover {
-  background-color: rgb(61, 44, 83) !important;
-}
-button[data-testid="carousel-left-control"] > span > svg,
-button[data-testid="carousel-right-control"] > span > svg {
-  color: rgb(255 0 195);
-}
-button[data-testid="carousel-indicator"].bg-white {
-  background-color: rgb(255 0 195) !important;
-}
-button[data-testid="carousel-indicator"] {
-  background-color: rgb(61, 44, 83) !important;
-}
 @layer utilities {
   .inner {
     --tw-shadow: 0px 25px 50px -12px rgb(0 0 0 / 0.25);
@@ -216,12 +204,14 @@ button[data-testid="carousel-indicator"] {
   }
   .rgb {
     @apply transition-shadow duration-300 ease-in-out shadow-transparent;
+
+    box-shadow: #ff00c300 0 0 16px;
   }
   .rgb:hover {
-    animation: rgb 3s linear infinite alternate-reverse;
+    box-shadow: #ff00c3 0 0 16px;
   }
 
-  @keyframes rgb {
+  /* @keyframes rgb {
     0% {
       box-shadow: 0 0 16px rgba(120, 200, 208, 1);
     }
@@ -253,7 +243,7 @@ button[data-testid="carousel-indicator"] {
     100% {
       box-shadow: 0 0 20px rgb(224, 43, 76);
     }
-  }
+  } */
 }
 
 /* /////////////////////// */

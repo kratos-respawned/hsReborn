@@ -38,11 +38,11 @@ function Init() {
                 height={198}
                 className=" group-hover:scale-110 duration-300 -translate-y-1/4 aspect-[113/140] w-32 sm:w-40 "
               />
-              <figure className="w-4/5 h-4/5 absolute bottom-1/2 left-1/2 translate-y-1/4 -translate-x-1/2  bg-[#F55B5B] blur-3xl -z-10" />
+              <figure className="w-4/5 h-4/5 absolute bottom-1/2 left-1/2 translate-y-1/4 -translate-x-1/2  bg-[#FF3b3b] blur-3xl -z-10" />
             </div>
           </div>
         </div>
-        <div className="bg-[#191322] c2 group hover:shadow-[#ea00ffcb] hover:shadow-2xl  transition-shadow duration-200 space-y-5">
+        <div className="bg-[#191322] c2 group hover:shadow-[#AA4295] hover:shadow-2xl  transition-shadow duration-200 space-y-5">
           <div className="w-full">
             <div className="w-max mx-auto relative isolate">
               <Image
@@ -54,7 +54,7 @@ function Init() {
               />
               <figure
                 className="
-            w-2/3 h-2/3 blur-2xl bg-[#EB00FF] -z-10
+            w-2/3 h-2/3 blur-2xl bg-[#AA4295] -z-10
             absolute bottom-1/2 left-1/2 -translate-x-1/2 translate-y-1/4"
               />
             </div>
@@ -76,7 +76,7 @@ function Init() {
               />
               <figure
                 className="
-            w-2/3 h-2/3 blur-2xl bg-[#ffb800] -z-10
+            w-2/3 h-2/3 blur-2xl bg-[#aa7842] -z-10
             absolute bottom-1/2 left-1/2 -translate-x-1/2 "
               />
             </div>
@@ -86,7 +86,7 @@ function Init() {
           </h2>
         </div>
 
-        <div className="c4 group hover:shadow-[#8000ffdf] hover:shadow-2xl transition-shadow duration-300 bg-[#191322] flex lg:flex-col-reverse items-center justify-between lg:justify-center ">
+        <div className="c4 group hover:shadow-[#9D3CD1] hover:shadow-2xl transition-shadow duration-300 bg-[#191322] flex lg:flex-col-reverse items-center justify-between lg:justify-center ">
           <div className="lg:flex-1 ml-3 lg:mb-12">
             <h2 className=" text-[#00C3FF] text-center   font-clashDisplay    text-2xl sm:text-4xl max-w-sm">
               Membership
@@ -103,7 +103,7 @@ function Init() {
                 height={362}
                 className=" group-hover:scale-110 transition-transform duration-300 aspect-square w-32 sm:w-52 lg:w-64"
               />
-              <figure className="w-4/5 h-4/5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-[#8000FF] blur-3xl -z-10" />
+              <figure className="w-4/5 h-4/5 absolute top-1/2 left-1/2 -translate-y-1/2 -translate-x-1/2  bg-[#9D3CD1] blur-3xl -z-10" />
             </div>
           </div>
         </div>

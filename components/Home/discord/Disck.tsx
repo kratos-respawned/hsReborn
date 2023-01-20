@@ -1,7 +1,7 @@
 import React from "react";
 
 function Disck() {
-  return <div>Disck</div>;
+  return <div></div>;
 }
 
 export default Disck;

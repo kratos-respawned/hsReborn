@@ -37,8 +37,9 @@ function Discord() {
       <h2 className=" translate-y-10 sm:translate-y-20 text-center font-clashDisplay text-white  text-3xl sm:text-5xl">
         Join our Discord
       </h2>
-
+      {/* circle 1 */}
       <div className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,900px)] h-[min(90vw,900px)]    bg-hsBlack inner shadow-violet  ">
+        {/* circle 2 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  w-[70%] h-[70%]    inner shadow-violet ">
           <motion.div
             style={{
@@ -56,14 +57,10 @@ function Discord() {
               <Bubble link="plasma" />
             </div>
           </motion.div>
-
-          <div className="absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full min-w-min w-[60%] h-[60%]  inner shadow-violet ">
-            <motion.div
-              style={{
-                scale: useSpring(useParallax(scrollYProgress, distance)),
-              }}
-              className="relative w-full h-full flex flex-col justify-center items-center gap-y-2"
-            >
+          {/* circle 3 */}
+          <div className="isolate grid place-items-center absolute  top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full min-w-min w-[60%] h-[60%]  inner shadow-violet ">
+            {/* discord images */}
+            <div className="space-y-3">
               <div className="scale-90">
                 <Image
                   src="/Discord.png"
@@ -75,11 +72,18 @@ function Discord() {
               </div>
               <button
                 type="button"
-                className="rounded-full navlink   w-fit mx-auto lg:mx-0 p-2 sm:px-3 bg-hsBlue text-hsWhite font-montserrat  hidden lg:block text-sm"
+                className="rounded-full navlink   w-fit mx-auto  p-2 sm:px-3 bg-hsBlue text-hsWhite font-generalSans  hidden lg:block text-sm"
               >
                 Join the server
               </button>
-
+            </div>
+            {/* inner images */}
+            <motion.div
+              style={{
+                scale: useSpring(useParallax(scrollYProgress, distance)),
+              }}
+              className="-z-10 absolute w-full h-full flex flex-col justify-center items-center gap-y-2"
+            >
               <motion.div className="absolute -right-2 sm:right-0 translate-x-full scale-[70%]">
                 <Bubble link="solid" />
               </motion.div>

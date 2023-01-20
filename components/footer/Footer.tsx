@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { useEffect } from "react";
 import kitty from "./lub.gif";
 import { useLoader } from "../../store/store";
 import {
@@ -58,7 +59,7 @@ export default function Footer() {
     <>
       <footer
         className={` ${
-          loading ? "hidden" : " block "
+          loading ? " hidden " : " block "
         } px-4 pt-14 pb-4 bg-hsBlack lg:px-6  relative z-10 overflow-clip`}
       >
         <figure

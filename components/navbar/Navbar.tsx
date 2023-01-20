@@ -2,12 +2,19 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useRouter } from "next/router";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import { useLoader } from "../../store/store";
-function Navbar() {
+function Navbar({ path }: { path: string }) {
   const router = useRouter();
   const loading = useLoader((state) => state.loading);
   const [navVisibility, setNavVisibility] = useState(false);
+  const completeLoader = useLoader((state) => state.setLoaded);
+
+  useEffect(() => {
+    if (path != "/") {
+      completeLoader();
+    }
+  }, [path, completeLoader]);
   return (
     <header className={`${loading ? " hidden " : " block "}`}>
       <nav className="relative flex items-center justify-between py-7 px-5 z-50">

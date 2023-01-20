@@ -38,7 +38,6 @@ function Home() {
           <Init />
           <Partners />
           <Discord />
-          <Disck />
         </main>
       </AnimatePresence>
     </>

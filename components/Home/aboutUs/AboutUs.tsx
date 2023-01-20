@@ -4,11 +4,11 @@ function AboutUs() {
       <div className="relative h-full ">
         <figure
           aria-hidden
-          className="bg-hsBlue w-80 h-80 lg:w-[480px] lg:h-[480px] blur-3xl  rounded-full absolute -top-10 left-0 -z-0 opacity-80 sm:opacity-100"
+          className="bg-hsBlue w-24 h-24 sm:w-80 sm:h-80 lg:w-[480px] lg:h-[480px] blur-3xl  rounded-full absolute -top-10 left-0 -z-0 opacity-80 sm:opacity-100"
         >
           <figure
             aria-hidden
-            className="bg-hsPink w-36 h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100"
+            className="bg-hsPink w-24 h-24 sm:w-36 sm:h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100"
           />
         </figure>
       </div>

@@ -2,15 +2,15 @@ import "../styles/globals.css";
 import type { AppProps } from "next/app";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
-
-// import { AnimatePresence } from "framer-motion";
-// import Loader from "../components/loaders/Loader";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
+import { useRouter } from "next/router";
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
 }: AppProps) {
+  const router = useRouter();
+  const path = router.pathname;
   return (
     <>
       <Head>
@@ -37,7 +37,7 @@ export default function App({
       <SessionProvider session={session}>
         <main className="bg-hsBlack overflow-clip">
           <main className="max-w-screen-xl mx-auto ">
-            <Navbar />
+            <Navbar path={path} />
             <Component {...pageProps} />
             <Footer />
           </main>
