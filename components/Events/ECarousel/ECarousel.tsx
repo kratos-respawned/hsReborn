@@ -25,7 +25,7 @@ function ECarousel() {
         showIndicators={true}
         showStatus={false}
         infiniteLoop={true}
-        autoPlay={false}
+        autoPlay={true}
         interval={5000}
         renderArrowNext={(onClickHandler, hasNext, label) =>
           hasNext && <Button onClickHandler={onClickHandler} label={label} />
