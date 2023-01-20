@@ -125,13 +125,6 @@ html {
   }
 }
 @layer components {
-  button[data-testid="carousel-left-control"] {
-    @apply lg:-translate-x-16 -translate-x-7;
-  }
-
-  /* button[data-testid="carousel-right-control"] {
-    @apply lg:translate-x-16 translate-x-7;
-  } */
   footer a:hover {
     @apply text-hsPink;
   }
@@ -139,6 +132,11 @@ html {
 
 .carousel .dot {
   background-color: #3d2c53 !important;
+  padding: 0.4rem;
+}
+.slider-wrapper {
+  width: 92% !important;
+  margin: 0 auto;
 }
 .carousel .dot.selected {
   background-color: #ff00c3 !important;

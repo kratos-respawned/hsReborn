@@ -47,6 +47,56 @@ function ECarousel() {
 }
 export default ECarousel;
 
+const Button = ({
+  onClickHandler,
+  label,
+}: {
+  onClickHandler: () => void;
+  label: string;
+}) => {
+  const isNextArrow = label.split(" ")[0] === "next";
+  return (
+    <button
+      className={` ${
+        isNextArrow ? " right-2 " : " left-2 "
+      } group absolute z-50 top-1/2  -translate-y-1/2 bg-[#241833] rounded-full focus:outline-hsPink`}
+      data-testid="carousel-right-control"
+      type="button"
+      title={label}
+      onClick={onClickHandler}
+    >
+      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50  dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60  sm:h-10 sm:w-10">
+        <svg
+          stroke="currentColor"
+          fill="none"
+          stroke-width="0"
+          viewBox="0 0 24 24"
+          className="h-5 w-5 text-white stroke-hsPink dark:text-gray-800 sm:h-6 sm:w-6"
+          height="1em"
+          width="1em"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          {isNextArrow ? (
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M9 5l7 7-7 7"
+            ></path>
+          ) : (
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="2"
+              d="M15 19l-7-7 7-7"
+            ></path>
+          )}
+        </svg>
+      </span>
+    </button>
+  );
+};
+
 function Card({
   title,
   description,
@@ -90,52 +140,3 @@ function Card({
     </div>
   );
 }
-const Button = ({
-  onClickHandler,
-  label,
-}: {
-  onClickHandler: () => void;
-  label: string;
-}) => {
-  const isNextArrow = label.split(" ")[0] === "next";
-  return (
-    <button
-      className={` ${
-        isNextArrow ? " right-2 " : " left-2 "
-      } group absolute z-50 top-1/2  -translate-y-1/2 bg-[#241833] rounded-full focus:outline-hsPink`}
-      data-testid="carousel-right-control"
-      type="button"
-      title="Next"
-      onClick={onClickHandler}
-    >
-      <span className="inline-flex h-8 w-8 items-center justify-center rounded-full bg-white/30 group-hover:bg-white/50 group-focus:outline-none group-focus:ring-4 group-focus:ring-white dark:bg-gray-800/30 dark:group-hover:bg-gray-800/60 dark:group-focus:ring-gray-800/70 sm:h-10 sm:w-10">
-        <svg
-          stroke="currentColor"
-          fill="none"
-          stroke-width="0"
-          viewBox="0 0 24 24"
-          className="h-5 w-5 text-white stroke-hsPink dark:text-gray-800 sm:h-6 sm:w-6"
-          height="1em"
-          width="1em"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          {isNextArrow ? (
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M9 5l7 7-7 7"
-            ></path>
-          ) : (
-            <path
-              stroke-linecap="round"
-              stroke-linejoin="round"
-              stroke-width="2"
-              d="M15 19l-7-7 7-7"
-            ></path>
-          )}
-        </svg>
-      </span>
-    </button>
-  );
-};
