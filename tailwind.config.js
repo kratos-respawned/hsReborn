@@ -18,6 +18,6 @@ module.exports = {
         generalSans: ["GeneralSans-Medium"],
       },
     },
-    plugins: [require("flowbite/plugin")],
+    plugins: [],
   },
 };
