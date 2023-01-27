@@ -6,16 +6,16 @@ function Contact() {
   const [email, setMail] = useState("");
   const [message, setMessage] = useState("");
   const { data: session } = useSession();
-  useEffect(() => {
-    if (session) {
-      if (session.user?.name && session.user?.email) {
-        setName(session.user.name);
-        setMail(session.user.email);
-      }
-    } else {
-      //
-    }
-  }, [session]);
+  // useEffect(() => {
+  //   if (session) {
+  //     if (session.user?.name && session.user?.email) {
+  //       setName(session.user.name);
+  //       setMail(session.user.email);
+  //     }
+  //   } else {
+  //     //
+  //   }
+  // }, [session]);
   return (
     <main className="mt-14 mb-28 space-y-10 px-10 relative z-10">
       <figure
@@ -31,7 +31,7 @@ function Contact() {
         Contact Us
       </h1>
       <section className="flex justify-between gap-7">
-        {!session ? (
+        {/* {!session ? (
           <div className="md:px-7  flex flex-col items-baseline justify-center gap-y-12">
             <h2 className="max-w-sm font-generalSans font-medium text-2xl text-hsWhite">
               You must be logged in to send message
@@ -49,7 +49,7 @@ function Contact() {
               Sign In
             </button>
           </div>
-        ) : (
+        ) : ( */}
           <form
             className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
             onSubmit={(e) => {
@@ -96,7 +96,7 @@ function Contact() {
               Send Message
             </button>
           </form>
-        )}
+        {/* )} */}
         <section className="justify-self-end text-hsWhite font-generalSans hidden sm:block">
           <div className="mb-4">
             <h3 className="mb-2 text-sm font-bold uppercase opacity-50">
