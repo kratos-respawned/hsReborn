@@ -2,8 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useLoader } from "../../store/store";
 function HsLoaderImage() {
-  const closeLoader = useLoader((state) => state.setLoaded);
-  const loader = useLoader((state) => state.loading);
   const container = {
     show: {
       transition: {
@@ -42,9 +40,7 @@ function HsLoaderImage() {
     <>
       <motion.svg
         onAnimationComplete={() => {
-          console.log(loader);
-          closeLoader();
-          console.log(loader);
+          useLoader.setState({ loading: false });
         }}
         width="388"
         height="419"

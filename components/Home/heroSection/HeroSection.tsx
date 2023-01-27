@@ -1,36 +1,31 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 function HeroSection() {
-  // const [width, setWidth] = useState(384);
-  // const [height, setHeight] = useState(415);
   const image = useRef<HTMLImageElement>(null);
   const hover = () => {
-    const imgHeight = image.current?.clientHeight;
-    const imgWidth = image.current?.clientWidth;
-    image.current?.addEventListener("mousemove", handleMove);
+    if (!image.current) return;
+    const imgHeight = image.current.clientHeight;
+    const imgWidth = image.current.clientWidth;
+    image.current.addEventListener("mousemove", handleMove);
     function handleMove(e: MouseEvent) {
+      if (!image.current) return;
       const xVal: number = e.offsetX;
       const yVal: number = e.offsetY;
-      if (!imgHeight || !imgWidth) return;
       const yRotation: number = 10 * ((xVal - imgWidth / 2) / imgWidth);
-
       const xRotation: number = -10 * ((yVal - imgHeight / 2) / imgHeight);
-
       const string =
         "perspective(500px) scale(1) rotateX(" +
         xRotation +
         "deg) rotateY(" +
         yRotation +
         "deg)";
-
-      if (image.current) image.current.style.transform = string;
+      image.current.style.transform = string;
     }
-
-    image.current?.addEventListener("mouseout", function () {
-      if (image.current)
-        image.current.style.transform =
-          "perspective(500px) scale(1) rotateX(0) rotateY(0)";
+    image.current.addEventListener("mouseout", function () {
+      if (!image.current) return;
+      image.current.style.transform =
+        "perspective(500px) scale(1) rotateX(0) rotateY(0)";
     });
   };
 

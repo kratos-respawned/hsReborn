@@ -8,13 +8,12 @@ function Navbar({ path }: { path: string }) {
   const router = useRouter();
   const loading = useLoader((state) => state.loading);
   const [navVisibility, setNavVisibility] = useState(false);
-  const completeLoader = useLoader((state) => state.setLoaded);
 
   useEffect(() => {
     if (path != "/") {
-      completeLoader();
+      useLoader.getState().setLoaded();
     }
-  }, [path, completeLoader]);
+  }, [path]);
   return (
     <header className={`${loading ? " hidden " : " block "}`}>
       <nav className="relative flex items-center justify-between py-7 px-5 z-50">
