@@ -77,7 +77,7 @@ export default function TimelineBox(props: Props) {
           </div>
 
           <div className="flex flex-col gap-x-2 sm:flex-row justify-between w-full">
-            <p className="font-clashDisplay tracking-widest font-semibold text-lg uppercase  text-white relative w-full mt-5">
+            <p className="font-clashDisplay tracking-widest font-semibold text-xl uppercase  text-[#A686ff] relative w-full mt-5">
               {props.title}
             </p>
             <span className="font-clashDisplay font-semibold text-lg uppercase text-[#A686FF] absolute right-1">
