@@ -93,13 +93,14 @@ function Init() {
         </div>
 
         <div className="c4 group cursor-pointer hover:shadow-[#9D3CD1] hover:shadow-2xl transition-shadow duration-300 bg-[#191322] flex lg:flex-col-reverse items-center justify-between lg:justify-center ">
-          <div className="flex flex-col justify-center w-full ml-3 lg:mb-12">
+          <div className="lg:flex-1 ml-3 lg:mb-12">
             <h2 className=" text-[#00C3FF] text-center font-clashDisplay text-2xl group-hover:translate-y-[-20%] transition-all  duration-500 sm:text-4xl max-w-sm">
               Membership
               <br />
               Townhall
+              <br />
+              <Link href="/" className="text-center w-full text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
             </h2>
-            <Link href="/" className="text-center w-full text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
           </div>
           <div className="lg:flex-1 lg:basis-3/5">
             <div className="relative  lg:translate-y-1/2  m-4 lg:my-auto lg:mx-0 sm:m-12 isolate">
