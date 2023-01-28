@@ -201,7 +201,7 @@ html {
     color: var(--c);
   }
   .rgb {
-    @apply transition-shadow duration-300 ease-in-out shadow-transparent;
+    @apply transition-shadow duration-700 ease-in-out shadow-transparent cursor-pointer;
 
     box-shadow: #ff00c300 0 0 16px;
   }
