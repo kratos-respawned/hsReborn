@@ -1,4 +1,4 @@
-import { motion, useAnimation, useInView } from "framer-motion";
+import { m as motion, useAnimation, useInView } from "framer-motion";
 import { useEffect, useRef } from "react";
 type Props = {
   id: number;

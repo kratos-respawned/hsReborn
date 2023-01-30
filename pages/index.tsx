@@ -5,7 +5,6 @@ import HeroSection from "../components/Home/heroSection/HeroSection";
 import Journey from "../components/Home/journey/Journey";
 import Members from "../components/Home/members/Members";
 import Partners from "../components/Home/partners/Partners";
-import Disck from "../components/Home/discord/Disck";
 import Init from "../components/Home/initiatives/Init";
 import { AnimatePresence } from "framer-motion";
 import Loader from "../components/loaders/Loader";

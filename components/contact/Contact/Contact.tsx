@@ -1,11 +1,11 @@
 import Link from "next/link";
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef } from "react";
 import { signIn, useSession } from "next-auth/react";
 function Contact() {
-  const [name, setName] = useState("");
-  const [email, setMail] = useState("");
-  const [message, setMessage] = useState("");
-  const { data: session } = useSession();
+  const name = useRef<HTMLInputElement>(null);
+  const email = useRef<HTMLInputElement>(null);
+  const messageRef = useRef<HTMLTextAreaElement>(null);
+  // const { data: session } = useSession();
   // useEffect(() => {
   //   if (session) {
   //     if (session.user?.name && session.user?.email) {
@@ -50,52 +50,51 @@ function Contact() {
             </button>
           </div>
         ) : ( */}
-          <form
-            className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
-            onSubmit={(e) => {
-              e.preventDefault();
-            }}
+        <form
+          className="flex flex-col gap-9 w-11/12 md:w-[500px] mt-5  "
+          onSubmit={(e) => {
+            e.preventDefault();
+          }}
+        >
+          <input
+            ref={name}
+            alt="enter name"
+            name="name"
+            type="text"
+            placeholder="Enter your Name"
+            className="bg-transparent tracking-wider border-b  px-3 pb-2 font-generalSans text-lg  text-hsWhite border-b-white focus:outline-none focus:border-b-white"
+            required
+            readOnly
+          />
+
+          <input
+            ref={email}
+            alt="email field"
+            name="email"
+            type="email"
+            placeholder="Enter your Email"
+            className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite focus:outline-none focus:border-b-white"
+            required
+            readOnly
+          />
+
+          <textarea
+            ref={messageRef}
+            name="message"
+            placeholder="Message"
+            className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite  focus:outline-none focus:border-b-white"
+            required
+            autoComplete="false"
+            rows={3}
+          />
+
+          <button
+            type="submit"
+            className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
           >
-            <input
-              value={name}
-              alt="enter name"
-              name="name"
-              type="text"
-              placeholder="Enter your Name"
-              className="bg-transparent tracking-wider border-b  px-3 pb-2 font-generalSans text-lg  text-hsWhite border-b-white focus:outline-none focus:border-b-white"
-              required
-              readOnly
-            />
-
-            <input
-              value={email}
-              alt="email field"
-              name="email"
-              type="email"
-              placeholder="Enter your Email"
-              className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite focus:outline-none focus:border-b-white"
-              required
-              readOnly
-            />
-
-            <textarea
-              value={message}
-              onChange={(e) => setMessage(e.target.value)}
-              name="message"
-              placeholder="Message"
-              className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite  focus:outline-none focus:border-b-white"
-              required
-              autoComplete="false"
-              rows={3}
-            />
-
-            <button
-              type="submit"
-              className="self-start border border-white hover:border-hsPink duration-300 ease-out hover:text-hsBlack hover:bg-hsPink   font-generalSans text-hsWhite rounded-3xl px-10 py-2"
-            >
-              Send Message
-            </button>
-          </form>
+            Send Message
+          </button>
+        </form>
         {/* )} */}
         <section className="justify-self-end text-hsWhite font-generalSans hidden sm:block">
           <div className="mb-4">

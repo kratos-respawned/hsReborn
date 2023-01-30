@@ -1,16 +1,16 @@
 import React from "react";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { useLoader } from "../../store/store";
 function HsLoaderImage() {
   const container = {
     show: {
       transition: {
-        staggerChildren: 0.08,
+        staggerChildren: 0.05,
       },
       exit: {
         x: 100,
         transition: {
-          duration: 2,
+          duration: 0.5,
         },
       },
     },

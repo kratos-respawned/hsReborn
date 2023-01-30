@@ -11,17 +11,22 @@ function AboutHs() {
         </div>
         <div className="space-y-10">
           <p>
-            Hackoverflow 1.0 was Chandigarh University’s first-ever short
-            hackathon. It was an official event of the university’s tech
-            festival and was one of the mega-events. It started in Block 9 and
-            around 25 teams participated in it.
+            Hackoverflow Society was founded with a vision to integrate
+            passionate and proficient peers all over the nation and provide
+            students with the best opportunities to ace their careers. Starting
+            in 2018 as Hackoverflow Technical Society, our founding members
+            built a foundation for a student-driven community, which came
+            together to organize the first-ever national level 36-hour hackathon
+            at Chandigarh University.
           </p>
           <p>
-            Ayonika Dey, who is now the co-founder of HTS, was then the core
-            member for this event and Karan Bhargav, who is now the founder and
-            director of HTS, was then a volunteer. They were people who had
-            dreams which were worth more than their sleep. They knew that
-            greatness comes before hustle only in a dictionary.
+            Taking the forward legacy, HTS then evolved into Hackoverflow
+            Society, widening its potential to unify interests beyond just tech
+            through events like Genesis. Our Society has helped more than 3000+
+            students gain hands-on industry-level exposure and get access to
+            extensive academic and skill-building resources and events. We aim
+            to continue building an inclusive platform for growth and learning
+            for students across the country.
           </p>
         </div>
       </article>

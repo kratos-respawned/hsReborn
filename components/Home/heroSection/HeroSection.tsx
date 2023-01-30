@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { motion } from "framer-motion";
+import { m as motion } from "framer-motion";
 import { useEffect, useRef } from "react";
 function HeroSection() {
   const image = useRef<HTMLImageElement>(null);
@@ -57,7 +57,7 @@ function HeroSection() {
         </button>
       </section>
       <section className="py-3 lg:py-6 flex-grow-0 lg:flex-grow relative z-10 ">
-        <motion.div layout layoutId="loader">
+        <motion.div>
           <Image
             ref={image}
             src="/hsLogo.png"
@@ -66,7 +66,6 @@ function HeroSection() {
             width={384}
             height={415}
             priority
-            loading="eager"
           />
         </motion.div>
 

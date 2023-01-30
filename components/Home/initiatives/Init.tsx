@@ -26,12 +26,17 @@ function Init() {
       >
         <div className="c1 group cursor-pointer hover:shadow-[#f55b5bc2] hover:shadow-2xl transition-shadow duration-300 bg-[#191322] flex items-center justify-between">
           <div className="flex flex-col">
-            <h2 className="ml-4 text-orange-500 group-hover:translate-y-[-20%] transition-all font-clashDisplay text-2xl   duration-500   duration-500 sm:text-4xl max-w-xs">
+            <h2 className="ml-4 text-orange-500 group-hover:translate-y-[-20%] transition-all font-clashDisplay text-2xl  duration-500 sm:text-4xl max-w-xs">
               The
               <br />
               LaDebug Club
             </h2>
-            <Link href="/" className="ml-4 text-white font-clashDisplay text-lg sm:text-xl max-w-xs opacity-0  duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
+            <Link
+              href="/"
+              className="ml-4 text-white font-clashDisplay text-lg sm:text-xl max-w-xs opacity-0  duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all"
+            >
+              Know More
+            </Link>
           </div>
           <div>
             <div className="relative  m-5 sm:m-12 isolate">
@@ -66,7 +71,12 @@ function Init() {
           <h2 className="text-center font-clashDisplay text-[#9E4FFF] group-hover:translate-y-[-20%] transition-all text-2xl duration-500  sm:text-4xl ">
             Bhartiya <br /> Gaming Co.
           </h2>
-          <Link href="/" className="text-center w-full -translate-y-7 text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
+          <Link
+            href="/"
+            className="text-center w-full -translate-y-7 text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all"
+          >
+            Know More
+          </Link>
         </div>
 
         <div className="bg-[#191322] cursor-pointer c3 group transition-shadow duration-200 hover:shadow-[#ffb700d5] hover:shadow-2xl space-y-5 flex flex-col justify-center">
@@ -86,10 +96,15 @@ function Init() {
               />
             </div>
           </div>
-          <h2 className="text-center font-clashDispla text-[#E6A866] group-hover:translate-y-[-20%] transition-all text-2xl duration-500  sm:text-4xl ">
+          <h2 className="text-center font-clashDisplay text-[#E6A866] group-hover:translate-y-[-20%] transition-all text-2xl duration-500  sm:text-4xl ">
             Life of <br /> Gurus
           </h2>
-          <Link href="/" className="text-center w-full -translate-y-7 text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
+          <Link
+            href="/"
+            className="text-center w-full -translate-y-7 text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all"
+          >
+            Know More
+          </Link>
         </div>
 
         <div className="c4 group cursor-pointer hover:shadow-[#9D3CD1] hover:shadow-2xl transition-shadow duration-300 bg-[#191322] flex lg:flex-col-reverse items-center justify-between lg:justify-center ">
@@ -99,7 +114,12 @@ function Init() {
               <br />
               Townhall
               <br />
-              <Link href="/" className="text-center w-full text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all">Know More</Link>
+              <Link
+                href="/"
+                className="text-center w-full text-white font-clashDisplay text-lg sm:text-xl opacity-0 duration-500 delay-0 group-hover:delay-200 group-hover:opacity-100 transition-all"
+              >
+                Know More
+              </Link>
             </h2>
           </div>
           <div className="lg:flex-1 lg:basis-3/5">

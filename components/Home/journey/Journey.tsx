@@ -2,7 +2,7 @@ import React, { Fragment, useEffect, useRef } from "react";
 import TimelineBox from "./TimelineBox";
 
 import {
-  motion,
+  m as motion,
   useInView,
   useScroll,
   useSpring,

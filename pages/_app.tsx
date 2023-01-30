@@ -5,6 +5,7 @@ import Footer from "../components/footer/Footer";
 import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
 import { useRouter } from "next/router";
+import { domAnimation, LazyMotion } from "framer-motion";
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
@@ -34,7 +35,8 @@ export default function App({
           crossOrigin="anonymous"
         />
       </Head>
-      <SessionProvider session={session}>
+      {/* <SessionProvider session={session}> */}
+      <LazyMotion features={domAnimation} strict>
         <main className="bg-hsBlack overflow-clip">
           <main className="max-w-screen-xl mx-auto ">
             <Navbar path={path} />
@@ -42,7 +44,8 @@ export default function App({
             <Footer />
           </main>
         </main>
-      </SessionProvider>
+      </LazyMotion>
+      {/* </SessionProvider> */}
     </>
   );
 }

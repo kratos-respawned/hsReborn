@@ -3,7 +3,7 @@ import Image from "next/image";
 import Bubble from "./Bubble";
 import {
   useScroll,
-  motion,
+  m as motion,
   useTransform,
   MotionValue,
   useSpring,
@@ -33,12 +33,15 @@ function Discord() {
     }
   }, []);
   return (
-    <section ref={circleRef} className=" mt-6   overflow-hidden  relative z-40">
+    <section
+      ref={circleRef}
+      className=" mt-6   overflow-hidden  relative z-40 "
+    >
       <h2 className=" translate-y-10 sm:translate-y-20 text-center font-clashDisplay text-white  text-3xl sm:text-5xl">
         Join our Discord
       </h2>
       {/* circle 1 */}
-      <div className=" translate-y-[35%] sm:translate-y-1/3  relative mx-auto rounded-full w-[min(90vw,900px)] h-[min(90vw,900px)]    bg-hsBlack inner shadow-violet  ">
+      <div className=" translate-y-[35%] sm:translate-y-1/3   relative mx-auto rounded-full w-[min(90vw,900px)] h-[min(90vw,900px)]     inner shadow-violet  ">
         {/* circle 2 */}
         <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 rounded-full  w-[70%] h-[70%]    inner shadow-violet ">
           <motion.div
