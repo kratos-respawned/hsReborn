@@ -15,6 +15,7 @@ module.exports = {
       fontFamily: {
         clashDisplay: ["ClashDisplay-Medium"],
         generalSans: ["GeneralSans-Medium"],
+        Montserrat: ["var(--font-montserrat)"],
       },
     },
     plugins: [],

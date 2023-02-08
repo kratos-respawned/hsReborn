@@ -1,7 +1,7 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-@import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
+/* @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap"); */
 html {
   text-size-adjust: 100% !important;
   scroll-behavior: smooth;
@@ -173,9 +173,7 @@ html {
   font-style: normal;
 }
 
-.font-Montserrat {
-  font-family: "Montserrat", sans-serif;
-}
+
 /* ///////////////////////// */
 @layer utilities {
   .hoverEffect {

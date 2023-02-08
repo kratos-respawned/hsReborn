@@ -6,6 +6,12 @@ import Head from "next/head";
 import { SessionProvider } from "next-auth/react";
 import { useRouter } from "next/router";
 import { domAnimation, LazyMotion } from "framer-motion";
+import { Montserrat } from "@next/font/google"
+const montserrat = Montserrat({
+  weight: ["400", "500", "600", "700"],
+  variable: "--font-montserrat",
+  subsets: ["latin"],
+})
 export default function App({
   Component,
   pageProps: { session, ...pageProps },
@@ -20,7 +26,7 @@ export default function App({
         <meta name="description" content="Page is loading please wait" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        <link
+        {/* <link
           rel="preload"
           href="/fonts/generalSans/GeneralSans-Variable.woff2"
           as="font"
@@ -33,11 +39,11 @@ export default function App({
           as="font"
           type="font/woff2"
           crossOrigin="anonymous"
-        />
+        /> */}
       </Head>
       {/* <SessionProvider session={session}> */}
       <LazyMotion features={domAnimation} strict>
-        <main className="bg-hsBlack overflow-clip">
+        <main className={`${montserrat.variable} bg-hsBlack overflow-clip`}>
           <main className="max-w-screen-xl mx-auto ">
             <Navbar path={path} />
             <Component {...pageProps} />
