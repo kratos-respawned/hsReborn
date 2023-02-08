@@ -73,7 +73,7 @@ function HeroSection() {
           aria-hidden
           className="bg-hsBlue w-80 h-80 sm:w-[492px] sm:h-[492px] blur-3xl rounded-full absolute -top-2 translate-x-32 -z-10"
         >
-          <figure className="bg-hsPink w-36 h-36 sm:w-[192px] sm:h-[192px] blur-xl rounded-full absolute top-10 translate-x-48" />
+          <figure className="bg-hsPink w-36 h-36 sm:w-[192px] sm:h-[192px] blur-2xl rounded-full absolute top-10 translate-x-48" />
         </figure>
       </section>
     </main>

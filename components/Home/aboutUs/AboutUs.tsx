@@ -8,7 +8,7 @@ function AboutUs() {
         >
           <figure
             aria-hidden
-            className="bg-hsPink w-24 h-24 sm:w-36 sm:h-36 lg:w-[192px] lg:h-[192px] blur-md rounded-full absolute left-1/2 opacity-80 sm:opacity-100"
+            className="bg-hsPink w-24 h-24 sm:w-36 sm:h-36 lg:w-[192px] lg:h-[192px] blur-3xl rounded-full absolute left-1/2 opacity-80 sm:opacity-100"
           />
         </figure>
       </div>

@@ -31,18 +31,16 @@ function Navbar({ path }: { path: string }) {
           />
         </div>
         <ul
-          className={`z-50 lg:z-0 tracking-wide absolute bg-[#140f1b92] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${
-            navVisibility ? "-translate-x-0 " : "translate-x-full"
-          } transition-transform min-h-[400px] lg:min-h-fit h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
+          className={`z-50 lg:z-0 tracking-wide absolute bg-[#140f1b92] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${navVisibility ? "-translate-x-0 " : "translate-x-full"
+            } transition-transform min-h-[400px] lg:min-h-fit h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
         >
           <li>
             <Link
               href="/"
-              className={`  navlink ${
-                router.pathname === "/"
+              className={`  navlink ${router.pathname === "/"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               Home
             </Link>
@@ -50,11 +48,10 @@ function Navbar({ path }: { path: string }) {
           <li>
             <Link
               href="/events"
-              className={`  navlink ${
-                router.pathname === "/events"
+              className={`  navlink ${router.pathname === "/events"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               Events
             </Link>
@@ -62,11 +59,10 @@ function Navbar({ path }: { path: string }) {
           <li>
             <Link
               href="/initiatives"
-              className={`  navlink ${
-                router.pathname === "/initiatives"
+              className={`  navlink ${router.pathname === "/initiatives"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               Initiatives
             </Link>
@@ -74,11 +70,10 @@ function Navbar({ path }: { path: string }) {
           <li>
             <Link
               href="/team"
-              className={`  navlink ${
-                router.pathname === "/team"
+              className={`  navlink ${router.pathname === "/team"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               Team
             </Link>
@@ -86,11 +81,10 @@ function Navbar({ path }: { path: string }) {
           <li>
             <Link
               href="/about"
-              className={`  navlink ${
-                router.pathname === "/about"
+              className={`  navlink ${router.pathname === "/about"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               About Us
             </Link>
@@ -98,11 +92,10 @@ function Navbar({ path }: { path: string }) {
           <li>
             <Link
               href="/contact"
-              className={`  navlink ${
-                router.pathname === "/contact"
+              className={`  navlink ${router.pathname === "/contact"
                   ? " pointer-events-none text-hsPink"
                   : " pointer-events-auto hover:after:w-full "
-              }`}
+                }`}
             >
               Contact Us
             </Link>
@@ -117,14 +110,12 @@ function Navbar({ path }: { path: string }) {
           }}
         >
           <AiOutlineMenuFold
-            className={`${
-              navVisibility ? " hidden " : " block "
-            } text-[#e0e0e0] text-2xl`}
+            className={`${navVisibility ? " hidden " : " block "
+              } text-[#e0e0e0] text-2xl`}
           />
           <AiOutlineMenuUnfold
-            className={`${
-              navVisibility ? " block " : " hidden "
-            }text-[#e0e0e0] text-2xl`}
+            className={`${navVisibility ? " block " : " hidden "
+              }text-[#e0e0e0] text-2xl`}
           />
         </button>
       </nav>
