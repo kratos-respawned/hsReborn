@@ -7,7 +7,6 @@ function ECarousel() {
   return (
     <main className="w-11/12 mx-auto">
       <div className="flex justify-between text-2xl md:text-5xl  font-clashDisplay text-white py-7 border-b">
-
         <button
           onClick={() => { setUpcoming(true) }}
           className={`${upcoming ? " font-medium " : "font-extralight "} text-left tracking-wider`}>
