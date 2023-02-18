@@ -1,10 +1,10 @@
 import Link from "next/link";
-import { useEffect, useRef } from "react";
-import { signIn, useSession } from "next-auth/react";
+// import { useEffect, useRef } from "react";
+// import { signIn, useSession } from "next-auth/react";
 function Contact() {
-  const name = useRef<HTMLInputElement>(null);
-  const email = useRef<HTMLInputElement>(null);
-  const messageRef = useRef<HTMLTextAreaElement>(null);
+  // const name = useRef<HTMLInputElement>(null);
+  // const email = useRef<HTMLInputElement>(null);
+  // const messageRef = useRef<HTMLTextAreaElement>(null);
   // const { data: session } = useSession();
   // useEffect(() => {
   //   if (session) {
@@ -57,7 +57,7 @@ function Contact() {
           }}
         >
           <input
-            ref={name}
+            // ref={name}
             alt="enter name"
             name="name"
             type="text"
@@ -68,7 +68,7 @@ function Contact() {
           />
 
           <input
-            ref={email}
+            // ref={email}
             alt="email field"
             name="email"
             type="email"
@@ -79,7 +79,7 @@ function Contact() {
           />
 
           <textarea
-            ref={messageRef}
+            // ref={messageRef}
             name="message"
             placeholder="Message"
             className="bg-transparent tracking-wider border-b  px-3 pb-2 border-b-white text-lg  font-generalSans text-hsWhite  focus:outline-none focus:border-b-white"

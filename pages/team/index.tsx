@@ -1,7 +1,7 @@
 import Head from "next/head";
 import React from "react";
 import HeroSection from "../../components/HeroSection/HeroSection";
-import AllTeam from "../../components/Team/AllTeam/AllTeam";
+// import AllTeam from "../../components/Events/AllTeam/AllTeam";
 import { TaumperList } from "../../components/Team/Taumper/List";
 import Taumper from "../../components/Team/Taumper/Taumper";
 
@@ -31,7 +31,7 @@ function test() {
           />
         );
       })}
-      <AllTeam />
+      {/* <AllTeam /> */}
     </main>
   );
 }
