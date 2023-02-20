@@ -3,7 +3,6 @@ import type { AppProps } from "next/app";
 import Navbar from "../components/navbar/Navbar";
 import Footer from "../components/footer/Footer";
 import Head from "next/head";
-import { SessionProvider } from "next-auth/react";
 import { useRouter } from "next/router";
 import { domAnimation, LazyMotion } from "framer-motion";
 import { Montserrat } from "@next/font/google"
@@ -26,22 +25,7 @@ export default function App({
         <meta name="description" content="Page is loading please wait" />
         <meta name="robots" content="index, follow" />
         <meta httpEquiv="X-UA-Compatible" content="ie=edge" />
-        {/* <link
-          rel="preload"
-          href="/fonts/generalSans/GeneralSans-Variable.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        />
-        <link
-          rel="preload"
-          href="/fonts/ClashDisplay/ClashDisplay-Variable.woff2"
-          as="font"
-          type="font/woff2"
-          crossOrigin="anonymous"
-        /> */}
       </Head>
-      {/* <SessionProvider session={session}> */}
       <LazyMotion features={domAnimation} strict>
         <main className={`${montserrat.variable} bg-hsBlack overflow-clip`}>
           <main className="max-w-screen-xl mx-auto ">
@@ -51,7 +35,6 @@ export default function App({
           </main>
         </main>
       </LazyMotion>
-      {/* </SessionProvider> */}
     </>
   );
 }
