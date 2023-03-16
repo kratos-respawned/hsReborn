@@ -2,13 +2,13 @@ import Image from "next/image";
 import Link from "next/link";
 import { AiOutlineMenuFold, AiOutlineMenuUnfold } from "react-icons/ai";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 import { useLoader } from "../../store/store";
 function Navbar({ path }: { path: string }) {
   const router = useRouter();
   const loading = useLoader((state) => state.loading);
   const [navVisibility, setNavVisibility] = useState(false);
-
+  const navbar = useRef<HTMLUListElement>(null);
   useEffect(() => {
     if (path != "/") {
       useLoader.getState().setLoaded();
@@ -32,6 +32,7 @@ function Navbar({ path }: { path: string }) {
           />
         </div>
         <ul
+          ref={navbar}
           className={`z-50 lg:z-0 tracking-wide absolute bg-[#140f1b92] backdrop-blur-2xl lg:backdrop-blur-none lg:bg-transparent top-0 right-0 ${navVisibility ? "-translate-x-0 " : "translate-x-full"
             } transition-transform min-h-[400px] lg:min-h-fit h-screen pt-[20vh] pr-7 text-right lg:text-left lg:pt-0 lg:h-fit  lg:translate-x-0  sm:w-[30vw] w-[50vw] lg:w-fit lg:static flex flex-col lg:flex-row lg:space-x-4 space-y-4 lg:space-y-0 text-[#e0e0e0] font-montserrat text-lg lg:text-base`}
         >

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { m as motion } from "framer-motion";
 import { useEffect, useRef } from "react";
+import Link from "next/link";
 function HeroSection() {
   const image = useRef<HTMLImageElement>(null);
   const hover = () => {
@@ -49,12 +50,13 @@ function HeroSection() {
           of integrating passionate and driven tech and non-tech enthusiasts
           across the world.
         </p>
-        <button
+        {/* <Link
           type="button"
+          href={"/about"}
           className="rounded-full  w-fit mx-auto lg:mx-0 p-2 px-3 bg-hsBlue hover:bg-hsPink transition-colors duration-200 hover:text-hsBlack text-hsWhite font-Montserrat text-sm md:text-base"
         >
           Learn More
-        </button>
+        </Link> */}
       </section>
       <section className="py-3 lg:py-6 flex-grow-0 lg:flex-grow relative z-10 ">
         <motion.div>

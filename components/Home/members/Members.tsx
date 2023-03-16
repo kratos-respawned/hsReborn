@@ -2,37 +2,22 @@ function Members() {
   return (
     <section className="">
       <hr className="w-[90%] mx-auto" />
-      <section className=" grid grid-cols-3  mt-10  py-16 md:py-28 relative overflow-y-hidden z-10">
-        <div className="grid place-items-center gap-y-2">
-          <p className="text-hsPink font-clashDisplay text-3xl sm:text-5xl lg:text-7xl">
-            5000 +
-          </p>
-          <p className="text-hsWhite font-clashDisplay  text-sm md:text-2xl lg:text-3xl text-center ">
-            Community Members
-          </p>
+      <section className="font-clashDisplay grid grid-rows-3 gap-2 sm:gap-0 sm:grid-cols-3 sm:grid-rows-1 justify-center items-center my-36 w-[90%] mx-auto relative    ">
+        <div className=" bg_slider px-5 hover:text-hsBlack   text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-center flex-1 py-12 border  sm:border-l-0 border-[#eb01f3]  h-full text-white">
+          5000 +
+          <br />
+          <span className="text-2xl">Community Members</span>
         </div>
-        <div className="grid place-items-center gap-y-2">
-          <p className="text-hsPink font-clashDisplay text-3xl sm:text-5xl lg:text-7xl">
-            50 +
-          </p>
-          <p className="text-hsWhite font-clashDisplay  text-sm md:text-2xl lg:text-3xl text-center ">
-            Events Organised
-          </p>
+        <div className=" bg_slider px-5 hover:text-hsBlack text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-center flex-1 py-12 border  sm:border-l-0 sm:border-r-0 border-[#eb01f3] h-full text-white">
+          50 +
+          <br />
+          <span className="text-2xl">Events Organised</span>
         </div>
-        <div className="grid place-items-center gap-y-2">
-          <p className="text-hsPink font-clashDisplay text-3xl sm:text-5xl lg:text-7xl">
-            5000 +
-          </p>
-          <p className="text-hsWhite font-clashDisplay  text-sm md:text-2xl lg:text-3xl text-center ">
-            Active Members
-          </p>
+        <div className=" bg_slider px-5 hover:text-hsBlack text-4xl sm:text-4xl md:text-5xl lg:text-7xl text-center flex-1 py-12  border  sm:border-r-0 border-[#eb01f3] h-full text-white">
+          5000 +
+          <br />
+          <span className="text-2xl">Active Members</span>
         </div>
-        <figure
-          aria-hidden
-          className="bg-hsBlue blur-3xl  w-3/4 h-96 absolute top-full -translate-y-7 left-1/2 -translate-x-1/2 -z-10 "
-        >
-          <figure className="bg-hsPink blur-lg bg-blend-normal w-1/2 h-36 mx-auto translate-y-5" />
-        </figure>
       </section>
     </section>
   );

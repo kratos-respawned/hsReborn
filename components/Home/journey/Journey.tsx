@@ -50,10 +50,10 @@ export default function Journey() {
       </div>
 
       <section className="mx-auto relative  z-10 px-7 grid  grid-cols-1 md:grid-cols-2 gap-x-12 lg:gap-x-9 gap-y-12 lg:gap-y-4 place-items-center   h-full pb-20 w-full">
-        <div className="absolute top-0 overflow-hidden left-0 md:-translate-x-1/2 md:left-1/2 rounded-full  sm:left-7 h-full w-4 bg-[#282828] ">
+        <div className="absolute top-0   rounded-full  overflow-clip left-0 md:-translate-x-1/2 md:left-1/2   sm:left-7 h-full w-4 bg-[#282828] ">
           <motion.div
             style={{ height: y }}
-            className=" w-full rounded-full bg-[#DE5FFE]"
+            className=" w-[70%] mx-auto rounded-full bg-[#DE5FFE]"
           ></motion.div>
         </div>
 
