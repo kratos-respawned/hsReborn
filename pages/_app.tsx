@@ -5,7 +5,7 @@ import Footer from "../components/footer/Footer";
 import Head from "next/head";
 import { useRouter } from "next/router";
 import { domAnimation, LazyMotion } from "framer-motion";
-import { Montserrat } from "@next/font/google"
+import { Montserrat } from "next/font/google"
 const montserrat = Montserrat({
   weight: ["400", "500", "600", "700"],
   variable: "--font-montserrat",

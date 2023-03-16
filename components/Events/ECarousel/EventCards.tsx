@@ -1,5 +1,6 @@
 import { m } from "framer-motion"
 import ImageCard from "./ImageCard"
+import { marqueeEvents } from "./marquee"
 
 function EventCards() {
     return (
@@ -11,36 +12,16 @@ function EventCards() {
         >
             <section className=" py-24 relative ">
                 <div className="grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 ">
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
-                    <ImageCard
-                        designation="Team Members > "
-                        image="/Team/akm.png"
-                        name="Branding Team"
-                    />
+                    {
+                        marqueeEvents.map((data, index) => {
+                            console.log(data)
+                            return <ImageCard key={index} description={data.description}
+                                image={data.image} title={data.title}
+                            />
+                        })
+                    }
+
+
                 </div>
             </section>
         </m.div>

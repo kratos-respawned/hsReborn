@@ -58,9 +58,8 @@ export default function Footer() {
   return (
     <>
       <footer
-        className={` ${
-          loading ? " hidden " : " block "
-        } px-4 pt-14 pb-4 bg-hsBlack lg:px-6  relative z-10 overflow-clip`}
+        className={` ${loading ? " hidden " : " block "
+          } px-4 pt-14 pb-4  lg:px-6  relative z-10 overflow-clip`}
       >
         <figure
           aria-hidden
