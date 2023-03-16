@@ -21,13 +21,14 @@ function Navbar({ path }: { path: string }) {
           <Link href="/">
             <Image src="/hsLogo.png" width={51} height={53} alt="hs logo" />
           </Link>
-          <Image src="/navbar/cu.png" width={95} height={34} alt="cu logo" />
+          <Image src="/navbar/cu.png" width={95} height={34} alt="cu logo" unoptimized />
           <Image
             src="/navbar/qs.png"
             width={93}
             height={30}
             alt="qs logo"
             className="hidden sm:block"
+            unoptimized
           />
         </div>
         <ul

@@ -14,14 +14,8 @@ function Taumper(props: Props) {
   return (
     <div className="px-7">
       <section className="border-t py-24 relative isolate ">
-        {props.id % 2 != 0 && (
+        {props.id % 2 != 0 ? (
           <>
-            <figure
-              aria-hidden
-              className="absolute bg-hsBlue w-32 h-32 md:w-52 md:h-52 
-        left-0 -translate-x-1/2 top-0 sm:bottom-1/2 md:-translate-y-1/2
-        blur-[100px] -z-10"
-            />
             <figure
               aria-hidden
               className="absolute bg-hsPink w-44 h-44 rounded-full 
@@ -29,6 +23,13 @@ function Taumper(props: Props) {
               blur-[100px] -z-10"
             />
           </>
+        ) : (
+          <figure
+            aria-hidden
+            className="absolute bg-hsBlue w-32 h-32 md:w-52 md:h-52 
+        left-0 -translate-x-1/2 top-0 sm:bottom-1/2 md:-translate-y-1/2
+        blur-[100px] -z-10"
+          />
         )}
         <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
           {props.title}

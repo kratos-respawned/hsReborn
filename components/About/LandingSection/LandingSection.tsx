@@ -21,8 +21,7 @@ function LandingSection() {
         }}
         className="max-w-6xl  font-clashDisplay font-light text-center  text-3xl sm:text-5xl lg:text-6xl  text-white"
       >
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Arcu, vel
-        euismod ornare vel vitae convallis placerat.
+        Discover a community of passionate peers and unlock your potential with Hackoverflow Society.
       </motion.h1>
     </div>
   );

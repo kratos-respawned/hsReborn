@@ -3,7 +3,7 @@ import React from "react";
 export type MarqueeEvent = {
   image: string;
   title: string;
-  description: string;
+  description?: string;
 };
 function ImageCard({ image, title, description }: MarqueeEvent) {
   return (

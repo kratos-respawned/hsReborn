@@ -78,9 +78,9 @@ function Contact() {
             <h3 className="mb-2 text-sm font-bold uppercase opacity-50">
               Contact Details
             </h3>
-            <a href="mailto:hackoverflow@cumail.in">hackoverflow@cumail.in</a>
+            <a className="hover:text-hsPink" href="mailto:hackoverflow@cumail.in">hackoverflow@cumail.in</a>
             <br />
-            <a href="tel:+91 7357610734">+91 7357610734</a>
+            <a className="hover:text-hsPink" href="tel:+91 7357610734">+91 7357610734</a>
           </div>
 
           <div className="mb-4">
@@ -88,9 +88,9 @@ function Contact() {
               Address
             </h3>
             <p>
-              <Link href="/" rel="noreferrer">
-                Hackoverflow Sociecty
-              </Link>
+
+              Hackoverflow Society
+
               ,<br />
               Chandigarh University, Gharuan
               <br />
@@ -103,12 +103,12 @@ function Contact() {
               Social Links
             </h3>
             <div className="flex flex-col">
-              <a href="https://www.instagram.com/hackoverflowsociety/">
+              <a className="hover:text-hsPink" href="https://www.instagram.com/hackoverflowsociety/">
                 Instagram
               </a>
-              <a href="https://discord.gg/beWGASaKAt">Discord</a>
-              <a href="https://www.facebook.com/HACKOVERFLOW3">Facebook</a>
-              <a href="https://twitter.com/Hackoverflow3">Twitter</a>
+              <a className="hover:text-hsPink" href="https://discord.gg/beWGASaKAt">Discord</a>
+              <a className="hover:text-hsPink" href="https://www.facebook.com/HACKOVERFLOW3">Facebook</a>
+              <a className="hover:text-hsPink" href="https://twitter.com/Hackoverflow3">Twitter</a>
             </div>
           </div>
         </section>

@@ -27,8 +27,6 @@ export const marqueeEvents: MarqueeEvent[] = [
   },
   {
     title: "Freshers’ Carnival",
-    // description:
-    //   "A 14-day long “Freshers’ Carnival”, exclusively for freshers of Chandigarh University. A two-week-long saga for the freshers to socialize with each other with fun and learning joyride. The carnival consisted of several joyous events for freshers to socialize and participate in.",
     description: `A "Freshers' Carnival" spanning 14 days was organized exclusively for first-year students of Chandigarh University. The carnival featured a variety of enjoyable events aimed at encouraging socialization and participation among the freshers.`,
     image: "/events/marquee/carnival.png",
   },
