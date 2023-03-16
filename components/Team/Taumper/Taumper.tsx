@@ -26,7 +26,7 @@ function Taumper(props: Props) {
               aria-hidden
               className="absolute bg-hsPink w-44 h-44 rounded-full 
         right-0 translate-x-1/2 sm:bottom-1/4 sm:translate-y-1/2 bottom-0
-              blur-3xl -z-10"
+              blur-[100px] -z-10"
             />
           </>
         )}

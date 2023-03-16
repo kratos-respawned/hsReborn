@@ -38,8 +38,8 @@ function Navbar({ path }: { path: string }) {
             <Link
               href="/"
               className={`  navlink ${router.pathname === "/"
-                  ? " pointer-events-none text-hsPink"
-                  : " pointer-events-auto hover:after:w-full "
+                ? " pointer-events-none text-hsPink"
+                : " pointer-events-auto hover:after:w-full "
                 }`}
             >
               Home
@@ -49,14 +49,14 @@ function Navbar({ path }: { path: string }) {
             <Link
               href="/events"
               className={`  navlink ${router.pathname === "/events"
-                  ? " pointer-events-none text-hsPink"
-                  : " pointer-events-auto hover:after:w-full "
+                ? " pointer-events-none text-hsPink"
+                : " pointer-events-auto hover:after:w-full "
                 }`}
             >
               Events
             </Link>
           </li>
-          <li>
+          {/* <li>
             <Link
               href="/initiatives"
               className={`  navlink ${router.pathname === "/initiatives"
@@ -66,13 +66,13 @@ function Navbar({ path }: { path: string }) {
             >
               Initiatives
             </Link>
-          </li>
+          </li> */}
           <li>
             <Link
               href="/team"
               className={`  navlink ${router.pathname === "/team"
-                  ? " pointer-events-none text-hsPink"
-                  : " pointer-events-auto hover:after:w-full "
+                ? " pointer-events-none text-hsPink"
+                : " pointer-events-auto hover:after:w-full "
                 }`}
             >
               Team
@@ -82,8 +82,8 @@ function Navbar({ path }: { path: string }) {
             <Link
               href="/about"
               className={`  navlink ${router.pathname === "/about"
-                  ? " pointer-events-none text-hsPink"
-                  : " pointer-events-auto hover:after:w-full "
+                ? " pointer-events-none text-hsPink"
+                : " pointer-events-auto hover:after:w-full "
                 }`}
             >
               About Us
@@ -93,8 +93,8 @@ function Navbar({ path }: { path: string }) {
             <Link
               href="/contact"
               className={`  navlink ${router.pathname === "/contact"
-                  ? " pointer-events-none text-hsPink"
-                  : " pointer-events-auto hover:after:w-full "
+                ? " pointer-events-none text-hsPink"
+                : " pointer-events-auto hover:after:w-full "
                 }`}
             >
               Contact Us

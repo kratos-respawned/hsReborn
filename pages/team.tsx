@@ -1,10 +1,12 @@
 import Head from "next/head";
 import React from "react";
-import HeroSection from "../../components/HeroSection/HeroSection";
-import { TaumperList } from "../../components/Team/Taumper/List";
-import Taumper from "../../components/Team/Taumper/Taumper";
+import HeroSection from "../components/HeroSection/HeroSection";
+import TeamsCard from "../components/Team/TeamsCard";
+import { teams } from "../components/Team/teams";
+import Taumper from "../components/Team/Taumper/Taumper";
+import { TaumperList } from "../components/Team/Taumper/List";
 
-function test() {
+function team() {
   return (
     <main>
       <Head>
@@ -30,8 +32,17 @@ function test() {
           />
         );
       })}
+      <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+        Teams
+      </h2>
+
+      <section className="px-7 grid  grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-7 mb-8 ">
+        {teams.map((team, index) => {
+          return <TeamsCard key={index} title={team.title} image={team.image} members={team.members} />
+        })}
+      </section>
     </main>
   );
 }
 
-export default test;
+export default team;
