@@ -18,7 +18,7 @@ function AboutUs() {
         <h2 className="font-clashDisplay text-hsWhite text-center text-5xl lg:text-left sm:text-7xl">
           About Us
         </h2>
-        <p className="font-Montserrat text-base sm:text-lg text-hsWhite text-center ">
+        <p className="font-Montserrat text-base sm:text-lg text-hsWhite text-center lg:text-justify ">
           Hackoverflow Society (HS) is one of the fastest-growing North Indian
           student societies. Recognized NAAC A+ accredited Chandigarh
           University, it organizes university-level, national, and international

@@ -51,13 +51,13 @@ function Discord() {
             className="relative w-full h-full "
           >
             <div className="absolute top-1/2 left-0 -translate-x-1/2   ">
-              <Bubble link="becaa" />
+              <Bubble link="/discord/nikhil.png" />
             </div>
             <div className=" absolute left-0    ">
-              <Bubble link="plasma" />
+              <Bubble link="/discord/manan.png" />
             </div>
             <div className="absolute right-0 top-1/3 translate-x-1/2 -translate-y-1/2   ">
-              <Bubble link="plasma" />
+              <Bubble link="/discord/img.png" />
             </div>
           </motion.div>
           {/* circle 3 */}
@@ -88,13 +88,13 @@ function Discord() {
               className="-z-10 absolute w-full h-full flex flex-col justify-center items-center gap-y-2"
             >
               <motion.div className="absolute -right-2 sm:right-0 translate-x-full scale-[70%]">
-                <Bubble link="solid" />
+                <Bubble link="/discord/kratos.png" />
               </motion.div>
               <motion.div className="absolute -left-5 sm:left-0  -translate-x-2/3  bottom-1/2 scale-[70%] ">
-                <Bubble link="asdasd" />
+                <Bubble link="/discord/anshika.png" />
               </motion.div>
               <motion.div className="absolute right-0 -top-5 -translate-x-full scale-75 ">
-                <Bubble link="liquid" />
+                <Bubble link="/discord/shashank.png" />
               </motion.div>
             </motion.div>
           </div>

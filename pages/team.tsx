@@ -5,6 +5,7 @@ import TeamsCard from "../components/Team/TeamsCard";
 import { teams } from "../components/Team/teams";
 import Taumper from "../components/Team/Taumper/Taumper";
 import { TaumperList } from "../components/Team/Taumper/List";
+import Card from "../components/Team/Taumper/Taumper";
 
 function team() {
   return (
@@ -17,7 +18,7 @@ function team() {
         />
       </Head>
       <HeroSection title="Our Team" />
-      {TaumperList.map((item) => {
+      {/* {TaumperList.map((item) => {
         return (
           <Taumper
             id={item.id}
@@ -31,7 +32,63 @@ function team() {
             designation2={item.designation2}
           />
         );
-      })}
+      })} */}
+      <div className="px-7">
+        <section className="border-t py-24 relative isolate ">
+
+          <>
+            <figure
+              aria-hidden
+              className="absolute bg-hsPink w-44 h-44 rounded-full 
+        right-0 translate-x-1/2 sm:bottom-1/4 sm:translate-y-1/2 bottom-0
+              blur-[100px] -z-10"
+            />
+          </>
+
+          <figure
+            aria-hidden
+            className="absolute bg-hsBlue w-32 h-32 md:w-52 md:h-52 
+        left-0 -translate-x-1/2 top-0 sm:bottom-1/2 md:-translate-y-1/2
+        blur-[100px] -z-10"
+          />
+
+          <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+            Our Mentors
+          </h2>
+          <div className={`grid grid-cols-1 gap-y-7  sm:grid-cols-2   gap-x-5 `}>
+            <Card
+              image="/Team/ak.jpg"
+              name="Dr. Arvinder Singh Kang"
+              designation="Director,DSW , Chandigarh University"
+            />
+            <Card
+              image="/Team/egov.png"
+              name="Ms. Shefali Verma"
+              designation="Head of E-Governance, Chandigarh University"
+            />
+          </div>
+        </section>
+        <section className="border-t py-24 relative isolate ">
+
+
+
+          <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+            Founding Mentors
+          </h2>
+          <div className={`grid grid-cols-1 gap-y-7  sm:grid-cols-2   gap-x-5 `}>
+            <Card
+              image="/Team/kb.png"
+              name="Karan Bhargav"
+              designation="Founder"
+            />
+            <Card
+              image="/Team/akm.png"
+              name="Amit Kumar Mishra"
+              designation="Co-Founder"
+            />
+          </div>
+        </section>
+      </div>
       <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
         Teams
       </h2>

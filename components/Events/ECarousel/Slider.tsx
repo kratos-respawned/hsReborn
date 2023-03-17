@@ -25,11 +25,12 @@ const Slider = () => {
                 hasPrev && <Button onClickHandler={onClickHandler} label={label} />
             }
         >
-            <Card title="Google Hashcode '21" dateString="June 20, 2021" />
-            <Card title="Google Hashcode '22" dateString="June 20, 2021" />
-            <Card title="Google Hashcode '23" dateString="June 20, 2021" />
-            <Card title="Google Hashcode '24" dateString="June 20, 2021" />
-            <Card title="Google Hashcode '25" dateString="June 20, 2021" />
+            <Card title="HS DAY" description="HS Day is an annual event that celebrates the establishment of the Hackoverflow Society, the most prominent student society at Chandigarh University. The day includes competitive events that allow students from all departments to showcase their talents and learn about the society's accomplishments. It is held to celebrate the achievements of the society and its members. " />
+            <Card title="Hack-the-Fest" description="A four-day full-fledged fest in conjunction with the fourth edition of Hackoverflow 4.0. With the vision to promote entrepreneurship and technology on a large scale, as well as provide a platform for students from all fields and interests, team Hackoverflow organized one of the largest techno-entrepreneurial fest of the year.
+" />
+            {/* <Card title="Google Hashcode '22" dateString="June 20, 2021" /> */}
+            {/* <Card title="Google Hashcode '24" dateString="June 20, 2021" /> */}
+            {/* <Card title="Google Hashcode '25" dateString="June 20, 2021" /> */}
         </Carousel>
     </m.div>
 };
@@ -90,7 +91,7 @@ function Card({
 }: {
     title: string;
     description?: string;
-    dateString: string;
+    dateString?: string;
     url?: string;
 }) {
     if (description === undefined) {
@@ -100,7 +101,7 @@ function Card({
     return (
         <div className="  mb-9 grid grid-flow-row md:grid-flow-col md:grid-cols-2  gap-2 py-10 place-items-center px-9 md:px-4 ">
             <Image
-                src="/events/hashcode.png"
+                src="/events/coming_soon.jpg"
                 height="291"
                 width="513"
                 alt="hashcode"
@@ -108,10 +109,11 @@ function Card({
 
             <div className="lg:mr-auto mx-0 md:mx-10  ">
                 <div className="text-white  text-4xl sm:text-5xl  font-clashDisplay font-medium text-left  md:text-left">
-                    {title.split(" ")[0] + " "}
+                    {/* {title.split(" ")[0] + " "}
                     <br className="" />
                     {title.split(" ")[1] + " "}
-                    {title.split(" ")[2]}
+                    {title.split(" ")[2]} */}
+                    {title}
                 </div>
                 <div className="text-white/50 text-lg font-clashDisplay font-semibold text-left  md:text-left  my-4">
                     {dateString}

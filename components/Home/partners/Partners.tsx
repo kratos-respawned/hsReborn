@@ -9,7 +9,7 @@ function Partners() {
       <div className="mt-28 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-5 sm:gap-x-10 sm:gap-y-10">
 
         {Sponsors.map((sponsor, index) => (
-          <div key={index} className="rgb py-2 px-2   rounded-2xl bg-[#20182c]">
+          <div key={index} className="rgb py-4 px-5   rounded-2xl bg-[#20182c]">
             <Image
               src={sponsor.image}
               className="mx-auto  invert grayscale object-contain w-40 h-16 "
