@@ -75,17 +75,74 @@ function team() {
           <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
             Founding Mentors
           </h2>
-          <div className={`grid grid-cols-1 gap-y-7  sm:grid-cols-2   gap-x-5 `}>
+          <div className={`grid grid-cols-1 gap-y-7  sm:grid-cols-3   gap-x-5 `}>
             <Card
               image="/Team/kb.png"
               name="Karan Bhargav"
-              designation="Founder"
+            // designation="Founder"
             />
             <Card
               image="/Team/akm.png"
               name="Amit Kumar Mishra"
-              designation="Co-Founder"
+            // designation="Co-Founder"
             />
+            <Card
+              image="/Team/ashutoshv.jpg"
+              name="Ashutosh Vijayvergiya"
+            // designation="Co-Founder"
+            />
+          </div>
+        </section>
+        <section className="border-t py-24 relative isolate ">
+
+
+
+          <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+            Chairperson
+          </h2>
+          <div className={`grid grid-cols-1 gap-y-7     gap-x-5 `}>
+            <Card
+              image="/Team/manan.jpeg"
+              name="Manan Kala"
+            // designation="Founder"
+            />
+
+          </div>
+        </section>
+        <section className="border-t py-24 relative isolate ">
+
+
+
+          <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+            Joint Secretary
+          </h2>
+          <div className={`grid grid-cols-1 gap-y-7     gap-x-5 `}>
+            <Card
+              image="/Team/nikhil.png"
+              name="Nikhil Anand"
+            />
+
+          </div>
+        </section>
+        <section className="border-t py-24 relative isolate ">
+
+
+
+          <h2 className="font-clashDisplay  font-medium text-5xl md:text-6xl text-center text-hsWhite mb-24">
+            Management Secretary
+          </h2>
+          <div className={`grid grid-cols-1 gap-y-7 sm:grid-cols-2     gap-x-5 `}>
+            <Card
+              image="/Team/alvina.jpeg"
+              name="Alvina"
+              designation="Internal Management Secretary"
+            />
+            <Card
+              image="/Team/shashank.png"
+              name="Shashank Sharma"
+              designation="External Management Secretary"
+            />
+
           </div>
         </section>
       </div>

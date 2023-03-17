@@ -171,7 +171,7 @@ export default function Footer() {
                 </li>
 
                 <li className="mb-4 hover:underline">
-                  <a href="tel:+91 7357610734">+91 7357610734</a>
+                  <a href="tel:+91 7597000499">+91 7597000499</a>
                 </li>
 
                 <li className="mb-4 lg:hidden">

@@ -12,6 +12,7 @@ import { useLoader } from "../store/store";
 
 function Home() {
   const loading = useLoader((state) => state.loading);
+  console.log("%cKRATOS", "color: red; font-family:monospace; font-size: 16px");
   return (
     <>
       <Head>
@@ -24,11 +25,10 @@ function Home() {
       <AnimatePresence>
         {loading && <Loader />}
         <main
-          className={`${
-            loading
-              ? " invisible scale-0 h-0 overflow-hidden "
-              : " scale-100 visible "
-          }`}
+          className={`${loading
+            ? " invisible scale-0 h-0 overflow-hidden "
+            : " scale-100 visible "
+            }`}
         >
           <HeroSection />
           <Members />

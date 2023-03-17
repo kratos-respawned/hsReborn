@@ -32,7 +32,7 @@ function Contact() {
                 email: emailValue,
                 message: messageValue,
               };
-              console.log(data);
+              // console.log(data);
             }
           }}
         >
@@ -80,7 +80,7 @@ function Contact() {
             </h3>
             <a className="hover:text-hsPink" href="mailto:hackoverflow@cumail.in">hackoverflow@cumail.in</a>
             <br />
-            <a className="hover:text-hsPink" href="tel:+91 7357610734">+91 7357610734</a>
+            <a className="hover:text-hsPink" href="tel:+91 7597000499">+91 7597000499</a>
           </div>
 
           <div className="mb-4">
