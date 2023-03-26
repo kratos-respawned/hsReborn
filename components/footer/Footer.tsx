@@ -58,8 +58,9 @@ export default function Footer() {
   return (
     <>
       <footer
-        className={` ${loading ? " hidden " : " block "
-          } px-4 pt-14 pb-4  lg:px-6  relative z-10 overflow-clip`}
+        className={` ${
+          loading ? " hidden " : " block "
+        } px-4 pt-14 pb-4  lg:px-6  relative z-10 overflow-clip`}
       >
         <figure
           aria-hidden
@@ -121,9 +122,9 @@ export default function Footer() {
           </div>
 
           {/* Grid for navigation */}
-          <div className="gap-x-4 grid grid-cols-2 lg:grid-cols-3 gap-1 text-white">
+          <div className="gap-x-4 grid grid-cols-2  gap-1 text-white">
             {/* Events column */}
-            <div className="justify-self-center font-Montserrat">
+            {/* <div className="justify-self-center font-Montserrat">
               <h3 className="mb-6 lg:mt-0 text-base font-clashDisplay tracking-wider font-semibold">
                 Events
               </h3>
@@ -156,7 +157,7 @@ export default function Footer() {
                   <Link href="/hacktober-fest">Hacktober Fest</Link>
                 </li>
               </ul>
-            </div>
+            </div> */}
 
             {/* Contact info column */}
             <div className="justify-self-center font-Montserrat">

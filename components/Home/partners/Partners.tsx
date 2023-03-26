@@ -7,7 +7,6 @@ function Partners() {
         Sponsors & Collaborations
       </h2>
       <div className="mt-28 grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-x-3 gap-y-5 sm:gap-x-10 sm:gap-y-10">
-
         {Sponsors.map((sponsor, index) => (
           <div key={index} className="rgb py-4 px-5   rounded-2xl bg-[#20182c]">
             <Image
@@ -17,7 +16,8 @@ function Partners() {
               height={24}
               alt={sponsor.name}
             />
-          </div>))}
+          </div>
+        ))}
       </div>
     </section>
   );
@@ -27,40 +27,42 @@ export default Partners;
 const Sponsors = [
   {
     name: "Coding Ninjas",
-    image: "/sponsors/codingNinjas.png"
+    image: "/sponsors/codingNinjas.png",
   },
   {
     name: "HackerEarth",
-    image: "/sponsors/hackerearth.png"
-  }
-  , {
+    image: "/sponsors/hackerearth.png",
+  },
+  {
     name: "aspiring minds",
-    image: "/sponsors/aspiringMinds.png"
-  }
-  , {
+    image: "/sponsors/aspiringMinds.png",
+  },
+  {
     name: "Coding Blocks",
-    image: "/sponsors/codingBlocks.png"
+    image: "/sponsors/codingBlocks.png",
   },
   {
     name: "IIT Mandi",
-    image: "/sponsors/iiy.png"
-  }
-  , {
+    image: "/sponsors/iiy.png",
+  },
+  {
     name: "uniball",
-    image: "/sponsors/uniball.png"
-  }
-  , {
+    image: "/sponsors/uniball.png",
+  },
+  {
     name: "VJ Events",
-    image: "/sponsors/vj.png"
-  }
-  , {
+    image: "/sponsors/vj.png",
+  },
+  {
     name: "GeeksforGeeks",
-    image: "/sponsors/gfg.png"
-  }, {
+    image: "/sponsors/gfg.png",
+  },
+  {
     name: "VLCC",
-    image: "/sponsors/vlcc.jpeg"
-  }, {
+    image: "/sponsors/vlcc.jpeg",
+  },
+  {
     name: "Zuno",
-    image: "/sponsors/zuno.png"
-  }
-]
+    image: "/sponsors/zuno.png",
+  },
+];

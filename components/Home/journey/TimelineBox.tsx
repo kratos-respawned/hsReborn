@@ -85,7 +85,7 @@ export default function TimelineBox(props: Props) {
             </span>
           </div>
 
-          <p className="text-sm text-[#eee] h-full leading-6 mt-7 font-extralight font-generalSans tracking-wider text-justify ">
+          <p className="text-sm text-[#eee] h-full leading-6 mt-7 font-light font-generalSans tracking-wider text-justify ">
             {props.desc}
           </p>
           <div className="absolute bottom-0 right-0">
